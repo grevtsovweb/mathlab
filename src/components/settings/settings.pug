@@ -1,0 +1,81 @@
+.settings
+  .settings__container
+    form.settings__form
+      .settings__inner-wrapper
+        .settings__row
+          .settings__title Личная информация
+        .settings__row
+          .settings__col
+            .settings__item
+              .settings__label Имя ученика
+              input.settings__text-input(type="text" value="" placeholder="Имя")
+          .settings__col
+            .settings__item
+              .settings__label Фамилия ученика
+              input.settings__text-input(type="text" value="" placeholder="Фамилия")
+          .settings__col.settings__col--middle-width
+            .settings__item
+              .settings__label Класс
+              .settings__select-wrapper
+                select.settings__select
+                  option.settings__select-option(value="1") 1 класс
+                  option.settings__select-option(value="2") 2 класс
+                  option.settings__select-option(value="3") 3 класс
+                  option.settings__select-option(value="4") 4 класс
+                  option.settings__select-option(value="5") 5 класс
+                  option.settings__select-option(value="6") 6 класс
+                  option.settings__select-option(value="7") 7 класс
+                  option.settings__select-option(value="8") 8 класс
+                  option.settings__select-option(value="9") 9 класс
+                  option.settings__select-option(value="10") 10 класс
+                  option.settings__select-option(value="11" selected) 11 класс
+            .settings__item.settings__item--avatar-circle
+              .settings__avatar-circle
+                img.settings__avatar-profile-pic(src="img/icons/icon-avatar-example.svg")
+              .settings__avatar-image
+                input.settings__avatar-file-upload(type="file", accept="image/*")
+                .settings__avatar-upload-btn Изменить        
+        .settings__row
+          .settings__col
+            .settings__item
+              .settings__label E-mail
+              input.settings__text-input(type="text" value="" placeholder="@")
+          .settings__col
+            .settings__item
+              .settings__label Номер телефона
+              input.settings__text-input.settings__text-input--phone-number(type="text" value="" placeholder="+7 (___)___-__-__")
+        .settings__row
+          .settings__col
+            .settings__item
+              .settings__label Имя родителя
+              input.settings__text-input(type="text" value="" placeholder="Имя родителя")
+          .settings__col
+            .settings__item
+              .settings__label Телефон родителя
+              input.settings__text-input.settings__text-input--phone-number(type="text" value="" placeholder="+7 (___)___-__-__")
+      .settings__inner-wrapper
+        .settings__row
+          .settings__title Сменить пароль
+        .settings__row
+          .settings__col
+            .settings__item
+              input.settings__text-input(type="text" value="" placeholder="Старый пароль")
+          .settings__col
+            .settings__item
+              input.settings__text-input(type="text" value="" placeholder="Новый пароль")
+      .settings__inner-wrapper
+        .settings__row.settings__row--big-indent
+          .settings__item
+            .settings__title Платежная информация
+            .settings__descr Подключи карту и&nbsp;ты&nbsp;сможешь быстро, и&nbsp;удобно оплачивать занятия
+        .settings__row.settings__row--big-indent
+          a.settings__bank-card.settings__bank-card--add.settings__bank-card--active(href="#")
+            .settings__bank-card-btn Привязать карту
+          .settings__bank-card.settings__bank-card--mastercard
+            .settings__bank-card-text 5160   0000   0000   0000
+            .settings__bank-card-close
+          .settings__bank-card.settings__bank-card--visa
+            .settings__bank-card-text 4160   0000   0000   0000
+            .settings__bank-card-close
+        .settings__row
+          button.settings__btn(type="submit") Сохранить данные

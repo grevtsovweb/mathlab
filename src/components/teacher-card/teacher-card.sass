@@ -1,0 +1,173 @@
+.teacher-card
+    display: flex
+    margin-left: -24px 
+    margin-right: -24px  
+
+    +md-block()
+        margin-left: -10px
+        margin-right: -10px
+
+    +xs-block()
+        margin-left: 0
+        margin-right: 0
+
+    +xs-block()
+        flex-direction: column
+
+    &__col
+        max-width: 495px
+        width: 100%
+        margin-left: 24px
+        margin-right: 24px
+
+        +md-block()
+            margin-left: 10px
+            margin-right: 10px
+
+        +xs-block()
+            max-width: 100%
+            margin-left: 0
+            margin-right: 0
+
+    &__info-wrapper
+        +xs-block()
+            order: 1
+            margin-top: 24px
+
+    &__name
+        font-family: $font-default
+        font-size: 32px
+        line-height: 32px
+        color: $color-black
+        margin-top: 0
+        margin-bottom: 12px
+
+        +md-block()
+            font-size: 20px
+            line-height: 20px
+            margin-bottom: 2px
+
+    &__university
+        font-family: $font-default
+        font-size: 20px
+        line-height: 20px
+        color: $color-black
+        margin-bottom: 28px
+        display: inline-flex
+        align-items: center
+        
+
+        +md-block()
+            font-size: 14px
+            line-height: 14px
+            font-weight: 500
+            margin-bottom: 22px
+
+    &__university-logo
+        width: 32px
+        height: 32px
+        flex-shrink: 0
+        display: inline-block
+        margin-left: 14px
+
+        +md-block()
+            width: 23px
+            height: 23px
+
+        +sm-block()
+            display: none
+
+        img
+            width: 100%
+            max-width: 100%
+            height: auto
+            display: block
+
+    &__about
+        font-family: $font-default
+        font-size: 20px
+        line-height: 20px
+        color: $color-black
+        opacity: .7
+        margin-bottom: 19px
+
+        +md-block()
+            font-size: 14px
+            line-height: 1.4
+            font-weight: normal
+            margin-bottom: 14px
+
+    &__image
+        width: 100%
+        min-height: 355px
+        height: 100%
+        border-radius: 8px
+        overflow: hidden
+
+        +md-block()
+            height: 250px
+
+        +xs-block()
+            height: 200px
+            min-height: auto
+
+        
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            max-width: 100%
+
+    &__footer
+        display: flex
+        margin-top: 38px
+        margin-right: -32px
+        margin-left: -32px
+
+        +md-block()
+            margin-top: 16px
+            margin-left: 0
+            margin-right: 0
+
+        +xs-block()
+            margin-top: 20px
+
+    &__footer-item
+        margin-left: 32px
+        margin-right: 32px
+        min-width: 180px
+
+        +md-block()
+            margin: 0
+
+        +sm-block()
+            min-width: auto
+
+        &:not(:last-child)
+            +md-block()
+                margin-right: 48px
+
+            +xs-block()
+                margin-right: 20px
+
+
+    &__footer-item-title
+        font-family: $font-default
+        font-size: 15px
+        line-height: 18px
+        color: $color-black
+        opacity: .7
+
+        +md-block()
+            font-size: 11px
+
+    &__footer-item-data
+        font-family: $font-default
+        font-size: 20px
+        line-height: 20px
+        color: $color-black
+        font-weight: bold
+        margin-top: 4px
+
+        +md-block()
+            font-size: 14px

@@ -1,0 +1,102 @@
+.banner-recommend
+  &__title-block
+    font: 500 12px/1.166 $font-default
+    color: $color-blue-10
+    letter-spacing: 0.02em
+    position: relative
+    text-align: center
+    margin: 20px 0 18px
+    &:before,
+    &:after
+      content: ''
+      display: block
+      height: 1px
+      background: $color-blue-8
+      position: absolute
+      top: calc(50% + -2px)
+      transform: translate3d(0,-50%,0)
+    &:before
+      width: 40.201005025125628%
+      left: 0
+    &:after
+      width: 40.201005025125628%
+      right: 0
+  &__link
+    padding: 15px 30px
+    background: linear-gradient(270deg, $color-orange 3.34%, $color-orange-4 87.96%)
+    box-shadow: 0px 4px 10px rgba($color-black-2, 0.05)
+    border-radius: 8px
+    display: flex
+    width: 100%
+    text-decoration: none
+    overflow: hidden
+    position: relative
+    margin: 0 0 18px
+    &:before
+      content: ''
+      display: block
+      background-image: url('../img/bgs/bg-8.png')
+      background-position: center center
+      background-repeat: no-repeat
+      background-size: contain
+      width: 198.46px
+      height: 88.27px
+      position: absolute
+      right: 15.39px
+      top: 7.93px
+      z-index: 1
+  &__container
+    @include glass
+    padding-left: 0
+    padding-right: 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__col
+    &--left
+    &--right
+  &__title
+    font: bold 20px/1.2 $font-default
+    color: $color-orange-3
+    letter-spacing: 0.02em
+    margin: 0 0 10px
+  &__text-wrapper
+    margin: 0 0 15px
+  &__text
+    font: 400 14px/16px $font-default
+    color: $color-orange-3
+    letter-spacing: 0.02em
+  &__price-new
+    font: bold 14px/16px $font-default
+    color: $color-red
+    letter-spacing: 0.02em
+    margin: 0 5px
+  &__price-old
+    font: bold 14px/16px $font-default
+    color: rgba($color-orange-3,0.5)
+    letter-spacing: 0.02em
+    text-decoration-line: line-through
+  &__date-and-location
+    font: 400 14px/1.142 $font-default
+    color: $color-orange-3
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    &:before
+      content: ''
+      @extend .icon-history-orange
+      margin: 0 10px 0 0
+  &__btn
+    @include btn-white-small
+    padding-left: 30px
+    padding-right: 30px
+    color: $color-orange
+    .banner-recommend__link:hover &
+      background: rgba($color-white,0.9)
+  &__img
+    width: 192.32px
+    height: auto
+    display: block
+    position: absolute
+    top: -33px
+    left: 457px

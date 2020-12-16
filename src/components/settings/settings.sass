@@ -1,0 +1,175 @@
+.settings
+  background: $color-white
+  box-shadow: 0px 4px 10px rgba($color-black-2, 0.05)
+  border-radius: 8px
+  padding: 30px
+  position: relative
+  &__container
+  &__form
+  &__inner-wrapper
+    padding: 0 0 30px
+    margin: 0 0 30px
+    border-bottom: 1px solid $color-white-2
+    &:last-child
+      margin-bottom: 0
+      padding-bottom: 0
+      border-bottom: none
+  &__row
+    margin: 0 0 15px
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+    &--big-indent
+      margin: 0 0 31px
+    &:last-child
+      margin-bottom: 0
+  &__title
+    font: bold 20px/1.2 $font-default
+    color: $color-black
+    letter-spacing: 0.02em
+    margin: 0 0 15px
+  &__col
+    margin: 0 22px 0 0
+    width: 30.342384887839433%
+    &--middle-width
+      max-width: 113px
+    &--short-width
+      width: 80px
+      margin: 0 0 0 auto
+    &:last-child
+      margin-right: 0
+  &__item
+    &--avatar-circle
+      position: absolute
+      right: 35px
+      top: 45px
+  &__label
+    font: 400 12px/1.333333333333333 $font-default
+    color: rgba($color-black-2,0.5)
+    margin: 0 0 10px
+  &__text-input
+    @include default-text-input
+  &__select-wrapper
+    position: relative
+    height: 44px
+    &:before
+      content: ''
+      @extend .icon-arrow-black-small-bottom
+      position: absolute
+      right: 17px
+      top: 50%
+      transform: translate3d(0,-50%,0)
+  &__select
+    user-select: none
+    border-radius: 4px
+    background: rgba($color-blue,0.1)
+    padding-top: 15px
+    padding-right: 16px
+    padding-bottom: 13px
+    padding-left: 16px
+    margin: 0
+    outline: none
+    border: none
+    font: 400 16px/1 $font-default
+    color: rgba($color-black,0.7)
+    position: relative
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    width: 100%
+  &__select-option
+    font: 400 16px/1 $font-default
+    color: rgba($color-black,0.7)
+  &__avatar-circle
+    margin: 0 0 10px
+  &__avatar-profile-pic
+    display: block
+    width: 80px
+    height: 80px
+    border-radius: 40px
+  &__avatar-image
+    position: relative
+  &__avatar-file-upload
+    width: 100%
+    height: 100%
+    text-indent: -9999px
+    position: absolute
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    user-select: none
+    border: none
+    outline: none
+  &__avatar-upload-btn
+    font: 400 12px/1.333 $font-default
+    color: rgba($color-black-2,0.5)
+    text-align: center
+    user-select: none
+    border: none
+    outline: none
+  &__descr
+    font: 400 16px/1 $font-default
+    color: rgba($color-black,0.7)
+  &__btn
+    @include btn-blue-small
+    padding: 16px 61px 16px 61px
+    width: auto
+  &__bank-card
+    text-decoration: none
+    border-radius: 8px
+    position: relative
+    display: none
+    &--add
+      padding: 65px 51px
+      border: 2px dashed rgba($color-blue,0.5)
+      @include hover
+    &--mastercard
+      padding: 83px 31px 81px 31px
+      background: linear-gradient(180deg, rgba($color-white-2,0.5) 0%, rgba($color-blue-3,0.5) 100%)
+      border: 2px solid rgba($color-blue,0.5)
+      &:after
+        content: ''
+        @extend .icon-mastercard
+        position: absolute
+        right: 31px
+        bottom: 20px
+    &--visa
+      padding: 83px 31px 81px 31px
+      background: linear-gradient(180deg, rgba($color-white-2,0.5) 0%, rgba($color-blue-3,0.5) 100%)
+      border: 2px solid rgba($color-blue,0.5)
+      &:after
+        content: ''
+        @extend .icon-visa
+        position: absolute
+        right: 31px
+        bottom: 25px
+    &--active
+      display: block
+  &__bank-card-btn
+    @include btn-blue-empty-bg-small
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    padding: 12.5px 30px 12.5px 30px
+    letter-spacing: 0
+    &:before
+      content: ''
+      @extend .icon-plus
+      width: 19px
+      height: 19px
+      margin: 0 10px 0 0
+  &__bank-card-text
+    font: bold 20px/1 $font-default
+    color: $color-blue
+    text-align: center
+    white-space: nowrap
+  &__bank-card-close
+    @extend .icon-close
+    width: 24px
+    height: 24px
+    position: absolute
+    right: 15px
+    top: 15px
+    @include hover
+    cursor: pointer

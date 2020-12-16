@@ -1,0 +1,148 @@
+.cover-sign-up
+  background: $color-blue
+  padding: 30px 0 120px
+  position: relative
+  &:before,
+  &:after
+    content: ''
+    position: absolute
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: contain
+    z-index: 1
+  &:before
+    background-image: url('../img/bgs/bg-3.png')
+    width: 475px
+    height: 249px
+    left: 3.055vw
+    bottom: 0
+  &:after
+    background-image: url('../img/bgs/bg-4.png')
+    width: 455px
+    height: 264px
+    right: 0
+    bottom: 0
+  &__container
+    @include glass
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+  &__col
+    &--left
+      padding: 0 46px 0 0
+      width: 50.82%
+    &--right
+  &__title
+    margin: 60px 0 60px
+    font: bold 40px/1.1 $font-default
+    color: $color-white
+  &__list
+    margin: 0
+    padding: 0
+    list-style: none
+  &__list-item
+    font: 400 20px/1.2 $font-default
+    color: $color-white
+    letter-spacing: 0.02em
+    margin: 0 0 30px
+    padding: 0 0 0 30px
+    position: relative
+    &:last-child
+      margin-bottom: 0
+    &:before
+      content: ''
+      @extend .icon-ok-green
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translate3d(0,-50%,0)
+  &__list-item-text-bold
+    font-weight: bold
+  &__form
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    width: 100%
+    max-width: 495px
+    padding: 60px 0 0 0
+    background: $color-white
+    border-radius: 8px
+    z-index: 2
+    position: relative
+  &__form-part
+    &--top
+      padding: 0 78px 60px
+      width: 100%
+    &--bottom
+      padding: 30px 78px
+      border-top: 1px solid $color-white-2
+      width: 100%
+      display: flex
+      justify-content: center
+      align-items: center
+  &__form-row
+    margin: 0 0 15px
+    width: 100%
+    text-align: center
+    &--2-col
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+      & > *
+        &:first-child
+          width: 65.088757396449704%
+        &:last-child
+          width: 30.473372781065089%
+  &__input-text
+    @include default-text-input
+  &__select-wrapper
+    position: relative
+    height: 44px
+    &:before
+      content: ''
+      @extend .icon-arrow-black-small-bottom
+      position: absolute
+      right: 12px
+      top: 50%
+      transform: translate3d(0,-50%,0)
+  &__select
+    user-select: none
+    border-radius: 4px
+    background: rgba($color-blue,0.1)
+    padding-top: 15px
+    padding-right: 16px
+    padding-bottom: 13px
+    padding-left: 16px
+    margin: 0
+    outline: none
+    border: none
+    font: 400 16px/1 $font-default
+    color: rgba($color-black,0.7)
+    position: relative
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    width: 100%
+  &__select-option
+    font: 400 16px/1 $font-default
+    color: rgba($color-black,0.7)
+  &__btn
+    &--blue
+      @include btn-blue-big
+    &--white
+      @include  btn-white-big($color-blue,$color-blue,$color-blue-2,$color-blue-4)
+  &__text
+    font: 400 12px/1 $font-default
+    color: rgba($color-black,0.7)
+    &--big
+      font: 400 15px/1 $font-default
+      color: rgba($color-black, 0.7)
+      margin: 0 10px 0 0
+  &__text-link
+    color: $color-blue
+    @include hover
+  &__link
+    color: $color-blue
+    text-decoration: none
+    @include hover

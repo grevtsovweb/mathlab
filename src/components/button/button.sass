@@ -1,0 +1,47 @@
+.button
+    user-select: none
+    display: inline-block
+    font-family: "Muller", sans-serif
+    font-weight: bold
+    font-size: 26px
+    text-transform: none
+    color: #FFFFFF
+    height: auto
+    background: #644BEC
+    border: none
+    line-height: 1
+    padding: 24px 44px 24px
+    cursor: pointer
+    outline: none
+    text-decoration: none
+    border-radius: 36px
+    text-align: center
+    white-space: nowrap
+    transition: all 0.2s ease
+
+    +md-block()
+        padding: 18px 44px 18px
+        font-size: 22px
+
+    &:hover
+        background: #8672F3
+        transition: all 0.2s ease
+
+    &_white
+        background-color: $color-white
+        color: $color-black-2
+
+    &_dark
+        background-color: $color-black
+        color: $color-white
+
+    &_full-width
+        width: 100%
+
+    &_full-width-xs
+        +xs-block()
+            width: 100%
+
+    &_medium
+        padding-left: 40px
+        padding-right: 40px

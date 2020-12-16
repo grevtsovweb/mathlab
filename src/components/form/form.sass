@@ -1,0 +1,22 @@
+.form
+    flex-shrink: 0
+    &__row
+        display: flex
+        justify-content: center
+        width: 100%
+
+    &__item
+        margin-left: 10px
+        margin-right: 10px
+
+        &_mobile-full
+            +xs-block()
+                width: 100%
+
+    &__wide-input
+        max-width: 610px
+        width: 100%
+        flex-shrink: 0
+
+        +md-block()
+            max-width: 424px

@@ -1,0 +1,149 @@
+.quote-block
+    +md-block()
+        padding-left: 15px
+        padding-right: 15px
+
+    +xs-block()
+        padding-left: 0
+        padding-right: 0
+
+    &__inner
+        background-color: $color-blue
+        color: $color-white
+        padding-top: 48px
+        padding-bottom: 56px
+        position: relative
+
+        +md-block()
+            padding-top: 32px
+            padding-bottom: 32px
+
+
+    &__container
+        +wrapper()
+
+        +sm-block()
+            padding-left: 15px
+            padding-right: 15px
+
+    &__row
+        +row-flex()
+
+    &__col
+        +col()   
+        +size(5)  
+
+        +size-md(5)
+
+        +size-sm(6)
+
+        +size-xs(12)
+
+    &__quote
+        padding-left: 82px
+        position: relative
+        padding-top: 16px
+
+        +md-block()
+            padding-left: 50px
+            padding-top: 10px
+
+        +xs-block()
+            padding-left: 58px
+            padding-right: 30px
+            padding-top: 34px
+
+        &::before
+            position: absolute
+            top: 0
+            left: 0
+            content: ''
+            width: 52px
+            height: 37px
+            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2252%22%20height%3D%2237%22%20viewBox%3D%220%200%2052%2037%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%0A%3Cpath%20d%3D%22M12.4876%2014.8V15.6706C15.4609%2015.9608%2018.0625%2017.1216%2020.2924%2019.1529C22.5224%2021.0392%2023.6373%2023.4333%2023.6373%2026.3353C23.6373%2029.0922%2022.5967%2031.5588%2020.5154%2033.7353C18.4341%2035.9118%2015.6096%2037%2012.0417%2037C8.62242%2037%205.7235%2035.4765%203.34491%2032.4294C1.11497%2029.3824%200%2025.6098%200%2021.1118C0%2016.6137%202.00694%2011.9706%206.02083%207.18236C10.1834%202.39412%2014.3459%200%2018.5085%200C19.8464%200%2020.5154%200.217648%2020.5154%200.652946C20.5154%201.08824%2020.2181%201.30589%2019.6234%201.30589C19.0288%201.30589%2017.9138%202.39412%2016.2785%204.57059C13.7513%207.76275%2012.4876%2011.1726%2012.4876%2014.8ZM40.8503%2014.8V15.6706C43.8236%2015.9608%2046.4252%2017.1216%2048.6551%2019.1529C50.885%2021.0392%2052%2023.4333%2052%2026.3353C52%2029.0922%2050.9594%2031.5588%2048.8781%2033.7353C46.9455%2035.9118%2044.1952%2037%2040.6273%2037C37.2081%2037%2034.3092%2035.4765%2031.9306%2032.4294C29.552%2029.3824%2028.3627%2025.6098%2028.3627%2021.1118C28.3627%2016.6137%2030.4439%2011.9706%2034.6065%207.18236C38.769%202.39412%2042.9316%200%2047.0941%200C48.2834%200%2048.8781%200.217648%2048.8781%200.652946C48.8781%201.08824%2048.7294%201.30589%2048.4321%201.30589C47.5401%201.30589%2046.2765%202.39412%2044.6412%204.57059C42.1139%207.90785%2040.8503%2011.3177%2040.8503%2014.8Z%22%20fill%3D%22%239481FB%22/%3E%0A%3C/svg%3E%0A')
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: center
+
+            +md-block()
+                width: 48px
+                height: 34px
+                top: 14px
+                left: -3px
+
+    &__quote-text
+        font-family: $font-default
+        font-style: normal
+        font-weight: bold
+        font-size: 32px
+        line-height: 1.25 
+
+        +md-block()
+            font-size: 23px
+
+        
+
+    &__quote-footer
+        padding-left: 95px
+        margin-top: 24px
+        position: relative
+
+        +md-block()
+            margin-top: 23px
+
+        &::before
+            position: absolute
+            top: 10px
+            left: 0
+            content: ''
+            width: 80px
+            height: 2px
+            background-color: rgba(255, 255, 255, 0.3)
+
+    &__quote-name
+        font-family: $font-default
+        font-style: normal
+        font-weight: bold
+        font-size: 18px
+        line-height: 18px
+        color: $color-white
+        margin-bottom: 6px
+
+        +md-block()
+            font-size: 17px
+            line-height: 17px
+
+
+    &__quote-position
+        font-family: $font-default
+        font-style: normal
+        font-weight: normal
+        font-size: 15px
+        line-height: 15px
+        color: rgba(255, 255, 255, 0.7)
+
+        +md-block()
+            font-size: 17px
+            line-height: 17px
+
+    &__person
+        position: absolute
+        content: ''
+        right: 0
+        top: 0
+        bottom: 0
+        width: 47.5%
+
+        +md-block()
+            width: 58%
+
+        +sm-block()
+            width: 50%
+
+        +xs-block()
+            display: none
+
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover

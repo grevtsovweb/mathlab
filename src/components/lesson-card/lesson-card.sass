@@ -1,0 +1,172 @@
+.lesson-card
+    display: flex
+    flex-direction: column
+    border-radius: 8px
+    padding: 80px 60px 80px 38px
+    width: 100%
+    flex-grow: 1
+
+    +xs-block()
+        padding-left: 20px
+        padding-top: 30px
+        padding-right: 20px
+        padding-bottom: 30px
+
+    &__title
+        font-family: $font-default
+        font-weight: bold
+        font-size: 32px
+        line-height: 32px
+        color: $color-white
+        margin-bottom: 30px
+
+        +md-block()
+            font-size: 24px 
+            line-height: 24px
+
+        +sm-block()
+            margin-bottom: 30px
+
+        +xs-block()
+            font-size: 22px
+            line-height: 18px
+    
+    &__text
+        font-family: $font-default
+        font-weight: normal
+        font-size: 20px
+        line-height: 1.4
+        color: rgba(255,255,255,.7)
+        max-width: 466px
+        margin-bottom: 30px
+
+        +md-block()
+            font-size: 15px 
+            line-height: 1.4
+
+    &__button
+        margin-top: auto
+
+    &_medium
+        min-height: 310px
+        padding: 44px 36px
+
+        +md-block()
+            padding-left: 25px
+            padding-top: 32px
+            padding-bottom: 40px
+            padding-right: 25px
+            min-height: 280px
+
+        +xs-block()
+            padding-left: 20px
+            padding-top: 30px
+            padding-right: 20px
+            padding-bottom: 30px
+            min-height: 266px
+
+        .lesson-card__text
+            +md-block()
+                max-width: 316px
+
+    &_tall
+        min-height: 460px
+        height: 100%
+
+        +md-block()
+            padding-left: 25px
+            padding-top: 80px 
+            padding-right: 58px
+            padding-bottom: 80px
+
+        +xs-block()
+            padding-left: 20px
+            padding-top: 30px
+
+        +sm-block()
+            padding: 30px 38px 30px 20px
+            min-height: 306px
+
+    &_tall-md
+        +md-block()
+            min-height: 360px
+
+        +xs-block()
+            padding-left: 20px
+            padding-top: 30px
+            padding-right: 20px
+            padding-bottom: 30px
+            min-height: 280px   
+
+
+    &_blue
+        background-color: $color-blue
+
+    &_dark
+        background-color: $color-black
+
+    &_white
+        background-color: $color-white
+        border: 4px solid $color-white-2
+
+        .lesson-card__title
+            color: $color-black
+
+        .lesson-card__text
+            color: $color-second-text
+
+    &_bg-1
+        background-image: url('../img/backgrounds/bg-1-desk.svg')
+        background-repeat: no-repeat
+        background-position: right center
+        background-size: contain 
+
+        +md-block()
+            background-image: url('../img/backgrounds/bg-1-md.svg')
+
+        +xs-block() 
+            background-image: url('../img/backgrounds/bg-1-mob.svg')
+            background-position: right bottom
+            background-size: auto
+    
+    &_bg-2
+        background-image: url('../img/backgrounds/bg-2.svg')
+        background-repeat: no-repeat
+        background-position: right center
+        background-size: 710px 415px
+        background-position: right -200px center
+        
+
+        +md-block()
+            background-position: right -340px center
+
+        +sm-block()
+            background-position: right -130px center
+            background-size: 430px 374px 
+
+        +xs-block() 
+            background-size: 212px 186px
+            background-position: right -150px bottom 10px
+
+    &_bg-3
+        background-image: url('../img/backgrounds/bg-5.svg')
+        background-repeat: no-repeat
+        background-position: right center
+        background-size: contain
+
+        +xs-block() 
+            background-image: url('../img/backgrounds/bg-5-mob.svg')
+            background-position: right center
+
+    &_bg-4
+        background-image: url('../img/backgrounds/bg-6.svg')
+        background-repeat: no-repeat
+        background-position: right center
+        background-size: contain
+
+        +xs-block() 
+            background-image: url('../img/backgrounds/bg-6-mob.svg')
+            background-position: right center
+
+
+

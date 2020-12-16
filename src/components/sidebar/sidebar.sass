@@ -1,0 +1,273 @@
+.sidebar
+  display: block
+  &--progress
+    background: $color-white
+    box-shadow: 0px 4px 10px rgba($color-black-2, 0.05)
+    border-radius: 8px
+  &__nav
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+    display: block
+    background: $color-white
+    box-shadow: 0px 4px 10px rgba($color-black-2, 0.05)
+    border-radius: 8px
+    margin: 0 0 20px
+  &__item
+    text-decoration: none
+    font: 400 16px/54px $font-default
+    color: $color-black
+    letter-spacing: 0.02em
+    width: 100%
+    height: 54px
+    position: relative
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    padding: 1px 20px 0 64px
+    transition: all 0.2s ease
+    &:before
+      content: ''
+      width: 24px
+      height: 24px
+      border-radius: 4px
+      background: $color-white-2
+      position: absolute
+      left: 30px
+      top: calc(50% - 1px)
+      transform: translate3d(0,-50%,0)
+      transition: all 0.2s ease
+    &:after
+      content: ''
+      position: absolute
+      top: calc(50% - 1px)
+      transform: translate3d(0,-50%,0)
+      transition: all 0.2s ease
+      opacity: 0.5
+    &--pay-for-classes
+      &:after
+        @extend .icon-card-default
+        left: 34px
+      &:hover:after
+        @extend .icon-card-active
+      &.sidebar__item--active
+        &:after
+          @extend .icon-card-active
+    &--available-classes
+      &:after
+        @extend .icon-play-2-default
+        left: 37.83px
+      &:hover:after
+        @extend .icon-play-2-active
+      &.sidebar__item--active
+        &:after
+          @extend .icon-play-2-active
+    &--my-lessons
+      &:after
+        @extend .icon-star-default
+        left: 35.4px
+        top: 24.5px
+      &:hover:after
+        @extend .icon-star-active
+      &.sidebar__item--active
+        &:after
+          @extend .icon-star-active
+    &--settings
+      &:after
+        @extend .icon-settings-default
+        left: 35px
+      &:hover:after
+        @extend .icon-settings-active
+      &.sidebar__item--active
+        &:after
+          @extend .icon-settings-active
+    &--notifications
+      &:after
+        @extend .icon-bell-2-default
+        left: 35.13px
+      &:hover:after
+        @extend .icon-bell-2-active
+      &.sidebar__item--active
+        &:after
+          @extend .icon-bell-2-active
+    &--exit
+      &:after
+        @extend .icon-exit-2-default
+        left: 36.9px
+        top: 27.3px
+      &:hover:after
+        @extend .icon-exit-2-active
+      &.sidebar__item--active
+        &:after
+          @extend .icon-exit-2-active
+    &:hover
+      color: $color-blue
+      &:before
+        background: $color-blue
+      &:after
+        opacity: 1
+    &:first-child
+      border-radius: 8px 8px 0 0
+    &:last-child
+      border-radius: 0 0 8px 8px
+    &--active
+      color: $color-white
+      background: $color-blue
+      &:before
+        background: rgba($color-white,0.2)
+      &:after
+        opacity: 1
+      &:hover
+        color: $color-white
+        background: $color-blue
+        &:before
+          background: rgba($color-white,0.2)
+  &__item-numbers
+    width: 19px
+    height: 19px
+    border-radius: 9.5px
+    background: $color-blue
+    display: flex
+    justify-content: center
+    align-items: center
+    letter-spacing: -0.05em
+    font: bold 11px/1 $font-default
+    color: $color-white
+    padding: 1px 1px 1px 0
+    position: relative
+    margin: 0 0 0 10px
+  &__circle
+    width: 15px
+    height: 15px
+    border-radius: 7.5px
+    background: $color-green
+    display: block
+    position: absolute
+    right: 15px
+    top: 50%
+    transform: translate3d(0,-50%,0)
+    margin: 0 0 0 10px
+  &__item-border
+    content: ''
+    width: calc(100% - 30px)
+    height: 1px
+    background: $color-white-2
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translate3d(-50%,0,0)
+    .sidebar__item--active &
+      background: $color-blue
+  &__banner
+    background: $color-blue-3
+    box-shadow: 0px 4px 10px rgba($color-black-2, 0.05)
+    border-radius: 8px
+    width: 100%
+    padding: 30px 15px
+  &__banner-link
+    text-decoration: none
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+  &__banner-title
+    font: bold 20px/1.2 $font-default
+    color: $color-black
+    letter-spacing: -0.01em
+    margin: 0 0 15px
+    &--small-indent
+      margin: 0 0 10px
+  &__banner-descr
+    font: 400 16px/1.5 $font-default
+    color: $color-black
+    letter-spacing: -0.01em
+    margin: 0 0 10px
+  &__banner-title-selected
+    color: $color-pink
+  &__banner-img
+    display: block
+    width: 100%
+    height: auto
+    margin: 0 auto 15px
+    max-width: 191px
+  &__banner-btn
+    @include btn-black-small
+    padding-left: 20px
+    padding-right: 20px
+    margin: 0 auto
+    .sidebar__banner:hover &
+      background: $color-gray
+  &__row
+    &--top
+      padding: 15px 15px 0 15px
+      margin: 0 0 15px
+    &--middle
+    &--bottom
+  &__title
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    margin: 0 0 15px
+    width: 100%
+  &__title-text
+    font: bold 20px/1.2 $font-default
+    color: $color-black
+    letter-spacing: -0.01em
+    margin: 0 15px 0 0
+  &__title-numbers
+    font: bold 20px/1.2 $font-default
+    color: rgba($color-black,0.5)
+    letter-spacing: -0.01em
+  &__progress
+    width: 100%
+    height: 12px
+    position: relative
+    background: rgba($color-blue,0.1)
+    border-radius: 10px
+  &__progress-line
+    background: linear-gradient(270deg, $color-blue 0%, $color-purple 79.17%)
+    border-radius: 10px
+    height: 100%
+    position: absolute
+    left: 0
+    top: 0
+    bottom: 0
+    transition: width 0.1s ease
+  &__list-lessons
+    padding: 0 15px
+    list-style: none
+    counter-reset: progress-counter -1
+  &__list-lessons-item
+    font: 400 14px/1.1428 $font-default
+    color: rgba($color-black-2,0.5)
+    border-bottom: 1px solid $color-white-2
+    padding: 15px 0 15px 34px
+    counter-increment: progress-counter
+    position: relative
+    &:before
+      content: counter(progress-counter) ". "
+      font: 400 14px/1.1428 $font-default
+      color: rgba($color-black,0.5)
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translate3d(0,-50%,0)
+    &--active
+      color: $color-blue
+      font-weight: bold
+      &:before
+        font-weight: bold
+        color: $color-blue
+  &__certificate
+    font: 400 14px/1.1428 $font-default
+    color: rgba($color-black-2,0.5)
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+    padding: 23px 15px 11px 15px
+    &:before
+      content: ''
+      @extend .icon-certificate
+      margin: 0 15px 0 0
+      transform: translate3d(0,-4px,0)

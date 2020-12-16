@@ -1,0 +1,39 @@
+.faq
+  padding: 120px 0
+  &__container
+    @include glass
+    max-width: 1050px
+  &__title
+    font: bold 40px/1.1 $font-default
+    color: $color-black-2
+    text-align: center
+    margin: 0 0 60px
+  &__item
+    margin: 0 0 30px
+    border: 1px solid $color-blue-3
+    border-radius: 8px
+    &:last-child
+      margin-bottom: 0
+  &__item-question
+    font: bold 20px/1 $font-default
+    color: rgba($color-black-2,0.9)
+    cursor: pointer
+    padding: 30px 30px 30px 30px
+    position: relative
+    &:after
+      content: ''
+      @extend .icon-arrow-blue-big-bottom
+      position: absolute
+      right: 30px
+      top: 33px
+    .faq__item--active &
+      &:after
+        @extend .icon-arrow-blue-big-top
+  &__item-answer
+    font: 400 18px/1.444 $font-default
+    color: rgba($color-black-2,0.9)
+    margin: 0 0 30px
+    padding: 0 30px
+    display: none
+    .faq__item--active &
+      display: block

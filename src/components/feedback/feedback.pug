@@ -1,0 +1,16 @@
+.feedback
+  .feedback__container
+    .feedback__title Остались вопросы?
+    .feedback__descr Напишите нам! Мы&nbsp;ответим со&nbsp;скоростью света!
+    form.feedback__form
+      .feedback__form-row
+        textarea.feedback__textarea(value="" placeholder="Вопросы сюда")
+      .feedback__form-row.feedback__form-row--2-col
+        input.feedback__input-text(type="text" value="" placeholder="Ваше имя")
+        input.feedback__input-text(type="text" value="" placeholder="Ваш e-mail")
+      .feedback__form-row
+        button.feedback__btn(type="submit") Отправить
+      .feedback__form-row
+        .feedback__text
+          | Нажимая на&nbsp;кнопку, я&nbsp;принимаю&nbsp;
+          a.feedback__text-link(href="#") условия соглашения

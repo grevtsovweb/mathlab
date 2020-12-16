@@ -1,0 +1,307 @@
+.header
+  padding: 12px 0
+  z-index: 2
+  position: fixed
+  width: 100%
+  top: 0
+  left: 0
+  transition: background-color .2s ease-in-out,box-shadow .2s ease-in-out
+
+  +md-block()
+    padding-top: 15px
+    padding-bottom: 15px
+
+  &--lite
+    background: $color-blue
+  &--inner
+    background: $color-white
+    box-shadow: 0px 4px 10px rgba($color-black-2, 0.05)
+  &__container
+    @include glass
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__col
+    &--left
+      display: flex
+      justify-content: flex-start
+      align-items: center
+    &--right
+      display: flex
+      justify-content: flex-end
+      align-items: center
+
+      @media screen and (max-width: 480px)
+        width: 100%
+        margin-left: 16px
+  &__logo
+    @extend .icon-logo-color
+    @include hover
+    .header--lite &
+      @extend .icon-logo-white
+
+  &__logo-container
+    width: 127px
+    margin-top: -8px
+
+    +sm-block()
+      margin-top: 0
+      width: auto
+      max-width: 104px
+      height: auto
+
+    @media screen and(max-width: 340px)
+      width: 54px
+      height: auto
+
+    svg
+      width: 100%
+      height: auto
+      display: block
+
+      +md-block()
+        path
+          fill: #000000 !important
+
+  &__nav
+    +md-block()
+      display: none
+
+  &__mobile-menu
+      display: none
+
+      +md-block()
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        flex-shrink: 0
+        background-color: transparent
+        border: none
+        width: 23px
+        height: 20px
+
+      svg
+        width: 100%
+        height: 100%
+
+  &__mobile-menu-line
+    width: 100%
+    height: 2px
+    display: block
+    background-color: $color-black
+
+  &__reminder
+    margin: 0 0 0 30px
+  &__reminder-item
+    font: 400 12px/1.333 $font-default
+    color: $color-black-2
+    background: $color-white-2
+    padding: 14px 38px 11px 41px
+    border-radius: 80px
+    position: relative
+    // transform: translate3d(0,)
+    &:before
+      content: ''
+      @extend .icon-bell
+      position: absolute
+      left: 15.33px
+      top: 50%
+      transform: translate3d(0,-50%,0)
+    &--active
+    &--urgent
+      background: rgba($color-red-2,0.6)
+      color: $color-white
+      &:before
+        @extend .icon-bell-2-active
+        width: 14px
+        height: 12.785388127853881px
+  &__btn-back
+    @include btn-white-small
+    margin: 0 0 0 50px
+    padding-left: 45px
+    width: auto
+    position: relative
+    &:before
+      content: ''
+      @extend .icon-arrow-blue-big-left
+      position: absolute
+      left: 20px
+      top: 50%
+      transform: translate3d(0,-50%,0)
+  &__text
+    text-decoration: none
+    font: bold 22px/1 $font-default
+    color: $color-black
+    white-space: nowrap
+    margin: 0 32px 0 0
+    @include hover
+
+    +md-block()
+      display: none
+
+    .header--lite &
+      color: $color-white
+  &__btn
+    @include btn-blue-small
+    max-width: 153px
+    margin: 0 0 0 0
+    flex-shrink: 0
+    margin-right: 32px
+
+    +md-block()
+      margin-right: 32px
+    +sm-block()
+      font-size: 14px
+      margin-right: 12px
+    +xs-block()
+      font-size: 14px
+      margin-right: 12px
+
+    @media screen and (max-width: 480px)
+      width: 100%
+      flex-grow: 1
+      max-width: none
+      flex-shrink: 1
+
+  &__btn-number-of-paid
+    text-decoration: none
+    font: 400 12px/16px $font-default
+    color: $color-black-2
+    padding: 11px 20px
+    border: 1px solid $color-blue-7
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 80px
+    margin: 0 30px 0 0
+    position: relative
+    &--warning
+    &--red
+      border-color: $color-red
+    &:before
+      content: ''
+      @extend .icon-play
+      margin: 0 11px 0 0
+    &:hover
+      color: $color-blue
+      transition: all 0.2s ease
+  &__btn-text-bold
+    margin: 0 0 0 5px
+    font: bold 12px/16px $font-default
+    color: $color-black-2
+    .header__btn-number-of-paid--warning &
+      color: $color-red
+  &__btn-number-of-paid-warning
+    width: 14px
+    height: 14px
+    border-radius: 7px
+    background: $color-red
+    display: none
+    justify-content: center
+    align-items: center
+    letter-spacing: -0.05em
+    font: bold 9px/1 $font-default
+    color: $color-white
+    padding: 1px 0 0 0
+    position: absolute
+    right: 6px
+    top: 3px
+    .header__btn-number-of-paid--warning &
+      display: flex
+  &__link
+    text-decoration: none
+    font: 400 16px/1 $font-default
+    color: $color-black
+    letter-spacing: 0.02em
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    transition: all 0.2s ease
+    &:hover
+      color: $color-blue
+    +md-block()
+      margin-right: 32px
+
+    +sm-block()
+      margin-right: 12px
+
+    &:hover:before
+      @extend .icon-enter-blue
+    .header--lite &
+      color: $color-white
+      @include hover
+      &:before
+        @extend .icon-enter-white
+      &:hover:before
+        @extend .icon-enter-white
+  &__link-text-icon
+    width: 24px
+    height: 24px
+
+    +md-block()
+      width: 28px
+      height: 28px
+
+    +sm-block()
+      width: 22px
+      height: 22px
+    svg
+      width: 100%
+      height: 100%
+      fill: #000000
+  &__link-text
+    padding-top: 3px
+    margin-left: 10px
+
+    +md-block()
+      display: none
+  &__user
+    text-decoration: none
+    margin: 0 10px 0 0
+    display: flex
+    justify-content: flex-start
+    align-items: center
+  &__user-avatar
+    display: block
+    width: 32px
+    height: 32px
+    border-radius: 16px
+    margin: 0 10px 0 0
+  &__user-text
+    padding: 9px
+    font: 500 14px/1 $font-default
+    letter-spacing: 0.02em
+    color: $color-blue
+    border-radius: 8px
+    background: $color-white-2
+  &__exit
+    text-decoration: none
+
+  &__btn-phone-mobile
+    width: 28px
+    height: 28px
+    justify-content: center
+    align-items: center
+    display: none
+    margin-right: 32px
+
+    +md-block()
+      display: flex
+
+    +sm-block()
+      width: 22px
+      height: 22px
+      margin-right: 12px
+     
+
+  &__btn-phone-mobile-icon
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+
+  &_white
+    background-color: #ffffff
+    box-shadow: 0 2px 12px 0 rgba(31,45,72,.15)

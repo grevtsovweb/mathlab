@@ -1,0 +1,15 @@
+// Import fonts
+// Muller
+@include font-face(Muller, "../fonts/Muller_400", 400, normal, eot woff2 woff svg ttf)
+@include font-face(Muller, "../fonts/Muller_500", 500, normal, eot woff2 woff svg ttf)
+@include font-face(Muller, "../fonts/Muller_600", bold, normal, eot woff2 woff svg ttf)
+html
+  -webkit-font-smoothing: antialiased
+body
+  font-family: $font-default
+  font-size: 14px
+  line-height: 1.4
+  color: $color-black
+  text-rendering: optimizeLegibility
+  -webkit-text-rendering: optimizeLegibility
+  @include selectionText

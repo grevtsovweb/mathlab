@@ -1,0 +1,211 @@
+.footer-main
+    padding-top: 50px
+    padding-bottom: 60px
+    background-color: $color-black
+    color: #ffffff
+    width: 100%
+    font-family: $font-default
+
+    +md-block()
+        padding-top: 50px
+        padding-bottom: 36px
+
+    +sm-block()
+        padding-top: 32px
+        padding-bottom: 32px
+
+    &__container
+        max-width: 1070px
+        width: 100%
+        padding-left: 30px
+        padding-right: 30px
+        box-sizing: border-box
+        margin-left: auto
+        margin-right: auto
+
+        +md-block()
+            padding-left: 15px
+            padding-right: 15px
+        
+    &__row
+        display: flex
+        justify-content: space-between
+        width: 100%
+
+        +sm-block()
+            flex-direction: column
+
+    &__logo
+        font-family: $font-default
+        font-style: normal
+        font-weight: bold
+        font-size: 22px
+        line-height: 22px
+        color: $color-white
+        text-decoration: none
+
+        +md-block()
+            font-size: 20px
+            line-height: 20px
+
+        +sm-block()
+            font-size: 18px
+            line-height: 18px
+
+    &__info
+        max-width: 500px
+        width: 100%
+        padding-top: 15px
+
+        +md-block()
+            max-width: 325px
+            padding-top: 20px
+
+        +sm-block()
+            max-width: 100%
+
+    &__about-team
+        color: #ffffff
+        font-family: $font-default
+        font-size: 20px
+        line-height: 20px
+        margin-top: 25px
+        margin-bottom: 0
+        font-style: normal
+        font-weight: normal
+        color: rgba(255, 255, 255, 0.7)
+
+        +md-block()
+            font-size: 14px
+            line-height: 14px
+        
+
+        +sm-block()
+            margin-top: 20px
+
+    &__contacts
+        padding-left: 30px
+        box-sizing: border-box
+
+        +md-block()
+            max-width: 325px
+            width: 100%
+
+        +sm-block()
+            padding-left: 0
+            margin-top: 56px
+
+        &:not(:first-child)
+            margin-top: 38px
+
+
+
+    &__contacts-text
+        font-size: 24px
+        line-height: 28px
+        color: #ffffff
+        font-family: $font-default
+        max-width: 315px
+        margin-bottom: 20px
+        font-weight: bold
+
+    &__social-list
+        padding: 0
+        margin: 0
+        margin-left: -11px
+        margin-right: -11px
+        display: flex
+
+    &__social-item
+        list-style: none
+        margin-left: 11px
+        margin-right: 11px
+        width: 48px
+        height: 48px
+
+    &__social-link
+        width: 100%
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        opacity: 1
+        transition: opacity .3s ease-out
+
+        &:hover
+            opacity: .7
+
+        img
+            width: 100%
+            height: 100%
+            max-width: 100%
+
+    &__rights-block
+        display: flex
+        margin-top: 68px
+        width: 100%
+        justify-content: space-between
+
+        +md-block()
+            flex-wrap: wrap
+            flex-direction: column-reverse
+
+        +sm-block()
+            margin-top: 60px
+
+    &__rights-block-item
+
+        +md-block()
+            margin-bottom: 36px
+
+        +sm-block()
+            margin-bottom: 40px
+
+    &__rights-block-copyright
+        +md-block()
+            flex-grow: 1
+            width: 100%
+            margin-bottom: 0
+
+    &__copyright
+        display: inline-block
+        font-size: 13px
+        line-height: 19px
+        color: $color-white
+        font-family: $font-default
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 16px
+
+        +sm-block()
+            font-size: 14px
+            line-height: 14px
+
+
+
+        
+    &__link
+        display: inline-block
+        font-size: 13px
+        line-height: 19px
+        color: $color-white
+        text-decoration: underline
+        text-decoration-skip-ink: none
+        font-family: $font-default
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 16px
+
+        +md-block()
+            font-size: 20px
+            line-height: 20px
+            font-weight: bold
+
+        +sm-block()
+            font-size: 18px
+            line-height: 18px
+
+        &:hover
+            text-decoration: none

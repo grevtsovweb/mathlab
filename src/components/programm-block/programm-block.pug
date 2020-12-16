@@ -1,0 +1,16 @@
+include ../lesson-card/lesson-card
+
+.programm-block
+    .programm-block__container
+        .programm-block__title
+            h3.title Все, что нужно для успешной подготовки к олимпиадам и сдаче экзаменов
+        .programm-block__row
+            .programm-block__col.programm-block__col-12
+                +lesson-card("lesson-card_medium lesson-card_dark lesson-card_bg-2", "button_white", "Олимпиадная математика", "Научим решать задачи, которые встречаются на олимпиадах. Разберем основные методы и подходы к решению задач")
+            .programm-block__col.programm-block__col-12
+                +lesson-card("lesson-card_medium lesson-card_blue lesson-card_bg-1", "button_white", "Школьная программа", "Поможем разобраться с отдельными темами по математике, решим множество задач.")
+        .programm-block__row
+            .programm-block__col.programm-block__col-6
+                +lesson-card("lesson-card_medium lesson-card_tall-md lesson-card_white", "", "ЕГЭ по математике", "Научим решать задачи, которые встречаются на олимпиадах. Разберем основные методы и подходы к решению задач")
+            .programm-block__col.programm-block__col-6
+                +lesson-card("lesson-card_medium lesson-card_tall-md lesson-card_white", "", "Международные экзамены", "Готовитесь к сдаче GRE или математической части GMAT? Сможем улучшить баллы на сдаче этих экзаменов!")

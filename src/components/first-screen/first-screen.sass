@@ -1,0 +1,114 @@
+.first-screen
+    padding-bottom: 60px
+    padding-top: 103px
+    background-image: url('../img/first-screen/first-screen-bg.svg')
+    background-repeat: no-repeat
+    background-position: top 78px center
+    background-size: cover
+    position: relative
+    overflow: hidden
+    
+    @media screen and (max-width: 1500px)
+       background-size: auto
+
+    +md-block()
+        padding-bottom: 40px
+        background-size: auto
+
+    +sm-block()
+        padding-top: 94px
+        padding-bottom: 30px
+        background-size: auto
+        background-image: none
+
+    &::after
+        @media screen and (min-width: 992px)
+            position: absolute
+            content: ''
+            width: 257px
+            height: 236px
+            background-image: url('../img/first-screen/first-screen-bg-dots.svg')
+            background-size: cover
+            background-repeat: no-repeat
+            background-position: center 
+            right: 0
+            top: 0
+            transform: translate(50%,-50%)
+
+    &__container
+        +wrapper()
+    
+    &__text
+        max-width: 1140px
+        width: 100%
+        margin-left: auto
+        margin-right: auto
+        margin-top: 80px
+        text-align: center
+
+        +xs-block()
+            margin-top: 40px
+
+    &__title
+        font-family: $font-default 
+        font-style: normal
+        font-weight: bold
+        font-size: 60px
+        line-height: 1.2
+        margin-bottom: 20px
+
+        +md-block()
+            font-size: 40px
+
+        +sm-block()
+            font-size: 28px
+
+        &_accent
+            color: $color-blue
+            display: block
+
+    &__subtitle
+        font-family: $font-default
+        font-size: 24px
+        line-height: 32px
+        text-align: center
+        color: $color-second-text
+        max-width: 730px
+        margin-left: auto
+        margin-right: auto
+
+        +md-block()
+            font-size: 18px
+            line-height: 32px
+
+        +sm-block()
+            font-size: 14px
+            line-height: 1.5
+
+    &__subtitle-accent
+        color: $color-blue
+
+    &__form-container
+        margin-top: 50px
+        margin-left: auto
+        margin-right: auto
+
+        +sm-block()
+            margin-top: 40px
+
+    &__form
+        display: flex
+
+    &__button
+        max-width: 304px
+        margin-left: auto
+        margin-right: auto
+
+    &__input
+        +md-block()
+            flex-grow: 1
+            max-width: none
+            width: auto
+
+        +sm-block()
+            display: none

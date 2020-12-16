@@ -1,0 +1,82 @@
+.footer
+  background: $color-black
+  padding: 52px 0 70px
+  &__container
+    @include glass
+    max-width: 1050px
+  &__row
+    display: flex
+    align-items: flex-start
+    &--top
+      margin: 0 0 144px
+      justify-content: space-between
+    &--bottom
+      justify-content: flex-start
+  &__col
+    .footer__row--bottom &
+      margin: 0 100px 0 0
+      &:last-child
+        margin-right: 0
+  &__title
+    font: bold 22px/1 $font-default
+    color: $color-white
+    letter-spacing: 0.02em
+    margin: 0 0 21px
+    padding: 17px 0 0 0
+    &--big-indent
+      margin: 0 0 32px
+      padding: 0 0 0 0
+  &__descr
+    font: 400 20px/1 $font-default
+    color: rgba($color-white,0.7)
+  &__list-social
+    display: flex
+    justify-content: flex-start
+    align-items: center
+  &__list-social-item
+    margin: 0 16px 0 0
+    width: 50px
+    height: 50px
+    position: relative
+    border-radius: 25px
+    transition: background 0.2s ease
+    &:last-child
+      margin-right: 0
+    &:after
+      content: ''
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate3d(-50%,-50%,0)
+    &--telegram
+      background: $color-blue-5
+      &:after
+        @extend .icon-telegram
+      &:hover
+        background: rgba($color-blue-5,0.8)
+    &--whatsapp
+      background: $color-green
+      &:after
+        @extend .icon-whatsapp
+      &:hover
+        background: rgba($color-green,0.8)
+    &--viber
+      background: $color-purple-3
+      &:after
+        @extend .icon-viber
+      &:hover
+        background: rgba($color-purple-3,0.8)
+    &--facebook
+      background: $color-blue-6
+      &:after
+        @extend .icon-facebook
+      &:hover
+        background: rgba($color-blue-6,0.8)
+  &__text
+    font: 400 16px/1 $font-default
+    color: $color-white
+  &__link
+    font: 400 16px/1 $font-default
+    color: $color-white
+    text-decoration: underline
+    @include hover

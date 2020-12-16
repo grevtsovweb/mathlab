@@ -1,0 +1,114 @@
+.modal-timing
+  position: fixed
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  width: 100%
+  height: 100vh
+  z-index: 9999
+  display: none
+  &--active
+    display: block
+  &__overlay
+    width: 100%
+    height: 100vh
+    background: rgba($color-black-2,0.5)
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    z-index: 9998
+  &__container
+    z-index: 9999
+    padding: 60px 0 60px
+    border-radius: 8px
+    top: 100px
+    left: 50%
+    transform: translate3d(-50%,0,0)
+    position: relative
+    width: 100%
+    max-width: 495px
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    background: $color-white
+    flex-direction: column
+  &__close
+    @extend .icon-close
+    cursor: pointer
+    position: absolute
+    top: 15px
+    right: 15px
+    @include hover
+  &__title
+    font: bold 24px/1 $font-default
+    color: $color-black-3
+    letter-spacing: 0.02em
+    width: 100%
+    text-align: center
+    padding: 78px 0 0 0
+    margin: 0 0 15px
+    position: relative
+    &:before
+      content: ''
+      @extend .icon-calendar
+      position: absolute
+      left: 50%
+      top: 0
+      transform: translate3d(-50%,0,0)
+  &__descr
+    font: 400 16px/1.625 $font-default
+    color: rgba($color-black-2,0.9)
+    text-align: center
+    margin: 0 0 15px
+  &__calendar
+    width: 100%
+    max-width: 374px
+    margin: 0 0 30px
+  &__calendar-header
+    margin: 0 0 10px
+  &__calendar-content
+  &__calendar-row
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: 0 0 10px
+    &:last-child
+      margin-bottom: 0
+  &__item
+    cursor: pointer
+    @include hover
+    .modal-timing__calendar-header &
+      background: rgba($color-green, 0.2)
+      border-radius: 4px
+      font: bold 16px/1.625 $font-default
+      color: $color-green
+      padding: 5px 17px 13px 11px
+      width: 100%
+      max-width: 13.368983957219251%
+      &.modal-timing__item--active
+        color: $color-white
+        background: $color-green
+      &.modal-timing__item--already-selected
+        color: $color-white
+        background: $color-green-2
+    .modal-timing__calendar-content &
+      font: 400 14px/1.857 $font-default
+      color: $color-blue
+      background: $color-white-2
+      text-align: center
+      border-radius: 4px
+      width: 100%
+      max-width: 14.438502673796791%
+      padding: 4px 5px 4px 5px
+      &.modal-timing__item--active
+        color: $color-white
+        background: $color-blue
+    &--already-set
+      background: rgba($color-red,0.2) !important
+      color: $color-red-2 !important
+  &__btn
+    @include btn-blue-big
+    max-width: 338px

@@ -1,0 +1,72 @@
+.notifications
+  &__container
+    padding: 30px 36px 30px 30px
+    background: $color-white
+    box-shadow: 0px 4px 10px rgba($color-black-2, 0.05)
+    border-radius: 8px
+    margin: 0 0 20px
+    &--without-box-shadow
+      box-shadow: none
+      border-radius: 0
+      background: none
+      padding: 0 0 0 0
+  &__item
+    padding: 0 0 15px
+    margin: 0 0 15px
+    border-bottom: 1px solid $color-white-2
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+    &:last-child
+      border-bottom: none
+      padding-bottom: 0
+      margin-bottom: 0
+  &__col
+    &--left
+      margin: 0 10px 0 0
+    &--middle
+      margin: 0 10px 0 0
+      padding: 4px 0 0 0
+    &--right
+      margin: 0 0 0 auto
+      padding: 5px 0 0 0
+  &__icon
+    &--bell
+      width: 32px
+      height: 32px
+      position: relative
+      background: $color-white-2
+      border-radius: 16px
+      &:after
+        content: ''
+        @extend .icon-bell-2-default
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate3d(-50%,-50%,0)
+    &--close
+      @extend .icon-close-2
+      @include hover
+  &__title
+    margin: 0 0 10px
+    font: bold 16px/24px $font-default
+    letter-spacing: 0.02em
+    color: $color-black
+  &__date
+    font: 400 14px/1.142 $font-default
+    color: rgba($color-black-2,0.5)
+  &__btn
+    @include btn-white-big($color-blue,$color-blue,$color-blue-4,$color-blue-4)
+    display: inline-block
+    font-size: 15px
+    padding: 15.5px 20px 15.5px 54px
+    background-color: transparent
+    width: auto
+    position: relative
+    &:before
+      content: ''
+      @extend .icon-ellipsis
+      position: absolute
+      left: 23px
+      top: 50%
+      transform: translate3d(0,-50%,0)

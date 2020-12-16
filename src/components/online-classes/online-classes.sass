@@ -1,0 +1,19 @@
+.online-classes
+  &__container
+    &:first-child
+      margin: 0 0 30px
+  &__btn
+    @include btn-white-big($color-blue,$color-blue,$color-blue-4,$color-blue-4)
+    display: inline-block
+    font-size: 15px
+    padding: 15.5px 20px 15.5px 54px
+    background-color: transparent
+    width: auto
+    position: relative
+    &:before
+      content: ''
+      @extend .icon-ellipsis
+      position: absolute
+      left: 23px
+      top: 50%
+      transform: translate3d(0,-50%,0)

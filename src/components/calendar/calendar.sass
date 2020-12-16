@@ -1,0 +1,109 @@
+.calendar
+  position: relative
+  margin: 0
+  overflow: hidden
+  background: $color-white
+  box-shadow: 0px 4px 10px rgba($color-black-2, 0.05)
+  border-radius: 8px
+  user-select: none
+  padding: 30px 0 20px
+  &__header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: 0 0 24px
+    padding: 0 24px
+  &__monthname
+    font: 400 20px/1 $font-default
+    color: $color-black-4
+  &__nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 40px
+  &__nav-item
+    cursor: pointer
+    @include hover
+    &--prev
+      @extend .icon-arrow-blue-big-left
+    &--next
+      @extend .icon-arrow-blue-big-right
+  &__content
+    &--days
+      display: flex
+      justify-content: flex-start
+      align-items: center
+      // border-bottom: 1px solid $color-white-3
+      margin: 0 0 8px
+      padding: 0 13px 12px
+      position: relative
+      &:after
+        content: ''
+        width: calc(100% - 46.86px)
+        height: 1px
+        background: $color-white-3
+        position: absolute
+        left: 50%
+        bottom: 0
+        transform: translate3d(-50%,0,0)
+    &--numbers
+      list-style: none
+      display: flex
+      justify-content: flex-start
+      align-items: flex-start
+      flex-wrap: wrap
+      padding: 0 11px
+  &__day
+    font: 400 12px/1.833 $font-default
+    color: $color-blue-7
+    width: 32px
+    margin: 5px
+    display: flex
+    justify-content: center
+    align-items: center
+  &__content-item
+    font: 400 12px/1.833 $font-default
+    color: $color-black-2
+    width: 32px
+    padding: 7px 0 4px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 4px 3px
+    &--today
+      background: rgba($color-blue-8,0.3)
+      border-radius: 8px
+    &--noclick
+      color: $color-blue-7
+      &:first-child
+        order: -1
+      &:nth-child(2)
+        order: -2
+      &:nth-child(3)
+        order: -3
+      &:nth-child(4)
+        order: -4
+      &:nth-child(5)
+        order: -5
+      &:nth-child(6)
+        order: -6
+      &:nth-child(7)
+        order: -7
+      &:nth-last-child(1)
+        order: 48
+      &:nth-last-child(2)
+        order: 49
+      &:nth-last-child(3)
+        order: 50
+      &:nth-last-child(4)
+        order: 51
+      &:nth-last-child(5)
+        order: 52
+      &:nth-last-child(6)
+        order: 53
+      &:nth-last-child(7)
+        order: 54
+      &:nth-last-child(8)
+        order: 55
+      &:nth-last-child(9)
+        order: 56

@@ -1,0 +1,13 @@
+include ../address-card/address-card
+
+.addresses-block
+    .addresses-block__container
+        .addresses-block__title
+            h6.title Наши адреса
+        .addresses-block__row
+            .addresses-block__col 
+                +address-card("img/address-card/address-card-icon-1.svg", "Научный парк МГУ", "Ленинские горы, д.1, стр.77 (м. Ломоносовский проспект, м. Университет)")
+            .addresses-block__col 
+                +address-card("img/address-card/address-card-icon-2.svg", "Библиотека №3 им. Добролюбова", "Смоленская площадь, д.13/21. (м.Смоленская, м.Арбатская)")
+            .addresses-block__col 
+                +address-card("img/address-card/address-card-icon-3.svg", "MathLabs Крымская", "Севастопольский проспект, д.5к3. (МЦК Крымская)")

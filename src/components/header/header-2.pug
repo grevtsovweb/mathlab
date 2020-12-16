@@ -1,0 +1,21 @@
+header.header.header-js
+  .header__container
+    .header__col.header__col--left
+      a.header__logo-container(href="/")
+        include ../../assets/img/logo/logo.svg
+      .header__nav
+        include ../nav/nav
+    .header__col.header__col--right
+      a.header__text(href="tel:+7495747723") +7 (495) 374-77-23
+      a.header__btn.button-open-auth-js(href="#") Записаться
+      a.header__btn-phone-mobile(href="tel:+7495747723")
+        span.header__btn-phone-mobile-icon
+          svg(width="28" height="28" aria-hidden="true")
+            use(xlink:href='img/social/social-sprite.svg#icon-phone')
+      a.header__link(href="#" data-modal="0")
+        span.header__link-text-icon
+          include ../../assets/img/icons/icon-enter-black.svg
+        span.header__link-text Войти
+      button.header__mobile-menu.mobile-menu-button-js
+          include ../../assets/img/commons/hamburger.svg
+    include ../mobile-menu/mobile-menu

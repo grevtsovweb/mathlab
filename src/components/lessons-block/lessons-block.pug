@@ -1,0 +1,12 @@
+include ../lesson-card/lesson-card
+
+.lessons-block
+    .lessons-block__container
+        .lessons-block__title
+            h3.title Повышаем математический уровень и готовим к олимпиадам
+        .lessons-block__row
+            .lessons-block__col
+                +lesson-card("lesson-card_tall lesson-card_blue lesson-card_bg-3", "button_white", "Повышение уровня", "Если у вас пробелы в школьном материале или есть непонимание определенных тем, то преподаватели MathLabs смогут повысить уровень учащегося.")
+            .lessons-block__col
+                +lesson-card("lesson-card_tall lesson-card_dark lesson-card_bg-4", "button_white", "Олимпиадная математика", "Мы победили в самых известных олимпиадах в России и точно знаем, как подготовить школьника к призовым местам. Это интересный путь, который сильно развивает математические способности.")
+    

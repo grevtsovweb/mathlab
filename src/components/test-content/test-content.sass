@@ -1,0 +1,188 @@
+.test-content
+  padding: 30px 30px 110px 30px
+  background-color: $color-white
+  box-shadow: 0px 4px 10px rgba($color-black-2, 0.05)
+  border-radius: 8px
+  position: relative
+  &:after
+    content: ''
+    @extend .icon-logo-mono
+    position: absolute
+    right: 30px
+    bottom: 30px
+    z-index: 0
+    user-select: none
+  &__header
+    margin: 0 0 30px
+    position: relative
+    z-index: 1
+  &__header-list
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__header-list-item
+    font: 500 15px/1 $font-default
+    color: $color-white
+    background: rgba($color-blue,0.2)
+    width: 32px
+    height: 32px
+    border-radius: 16px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 0 10px 0 0
+    &:last-child
+      margin-right: 0
+    &--active
+      background: $color-blue
+    &--done
+      background: $color-purple
+    &--missed
+      background: $color-black
+    &--true
+      background: $color-green
+    &--false
+      background: $color-orange
+  &__body
+    position: relative
+    z-index: 1
+  &__body-text-wrapper
+    margin: 0 0 30px
+    width: 100%
+    max-width: 100%
+    &--small-indent
+      margin-bottom: 15px
+  &__title
+    font: bold 20px/1.2 $font-default
+    letter-spacing: 0.02em
+    color: $color-black-2
+    margin: 0 0 15px
+  &__text
+    font: 400 18px/1.444 $font-default
+    color: $color-black-2
+    margin: 0 0 20px
+    &:last-child
+      margin-bottom: 0
+    b
+      font-weight: bold
+  &__text-bold
+    font-weight: bold
+  &__quote
+    font: 400 13px/1.8461 $font-default
+    color: rgba($color-black-2,0.5)
+    position: relative
+    padding: 0 0 0 8px
+    margin: 0 0 15px
+    &:before
+      content: ''
+      width: 3px
+      height: 100%
+      position: absolute
+      left: 0
+      top: 0
+      bottom: 0
+      border-radius: 3px 0 0 3px
+    &--blue
+      &:before
+        background: $color-blue
+    &--green
+      &:before
+        background: $color-green
+  &__stat-results
+    margin: 0 0 30px
+  &__stat-results-text
+    font: 400 18px/1.444 $font-default
+    color: $color-black-2
+    margin: 0 0 6px
+    &:last-child
+      margin-bottom: 0
+  &__stat-results-text-number
+    font-weight: bold
+    &--green
+      color: $color-green
+    &--orange
+      color: $color-orange
+  &__answer
+  &__input-text
+    @include default-text-input
+    max-width: 160px
+    margin: 0 0 30px !important
+  &__btns-wrapper
+    display: flex
+    justify-content: flex-start
+    align-items: center
+  &__btn
+    &--submit
+      margin: 0 15px 0 0
+      @include btn-blue-small
+      padding: 16px 30px 16px
+      display: inline-block
+      width: auto
+    &--disabled,
+    &:disabled
+      background: rgba($color-blue,0.5)
+      cursor: default
+      &:hover
+        background: rgba($color-blue,0.5)
+    &--link
+      @include btn-black-small
+      max-width: 146px
+      padding-left: 20px
+      padding-right: 20px
+    &--white
+      @include btn-white-small
+      border: 1px $color-blue solid
+      padding: 15px 30px 15px
+      width: auto
+      @include hover
+  &__checkbox-wrapper
+    margin-bottom: 28px
+  &__checkbox-item
+    margin-bottom: 12px
+    display: flex
+    &:last-child
+      margin-bottom: 0
+  &__checkbox-label
+    position: relative
+    padding-left: 27px
+    cursor: pointer
+    font-size: 22px
+    user-select: none
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    width: auto
+  &__checkbox-default
+    position: absolute
+    opacity: 0
+    cursor: pointer
+    display: block !important
+    width: 100%
+    left: 0
+    top: 0
+    height: 18px
+  &__checkbox-text
+    font: 400 16px/20px $font-default
+    color: $color-black
+    transition: color 0.2s ease
+    .test-content__checkbox-default:checked + &
+      color: $color-blue
+  &__checkbox-mark
+    position: absolute
+    top: 0
+    left: 0
+    height: 18px
+    width: 18px
+    border-radius: 4px
+    background-color: rgba($color-blue,0.1)
+    @include hover
+    .test-content__checkbox-label &:after
+      content: ''
+      position: absolute
+      display: none
+    .test-content__checkbox-label .test-content__checkbox-default:checked ~ &:after
+      display: block
+    .test-content__checkbox-label &:after
+      content: ''
+      transform: translate3d(2px, 3px, 0)
+      @extend .icon-ok-blue

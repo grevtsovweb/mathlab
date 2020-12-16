@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="12px" viewBox="0 0 16 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>icon-2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-2" transform="translate(1.000000, 1.000000)">
+            <path d="M14.5,1.375 C14.7761,1.375 15,1.15114 15,0.875 C15,0.59886 14.7761,0.375 14.5,0.375 L14.5,1.375 Z M4.75,0.375 C4.47386,0.375 4.25,0.59886 4.25,0.875 C4.25,1.15114 4.47386,1.375 4.75,1.375 L4.75,0.375 Z M14.5,0.375 L4.75,0.375 L4.75,1.375 L14.5,1.375 L14.5,0.375 Z" id="Shape" fill="#644BEC" fill-rule="nonzero"></path>
+            <path d="M14.5,5.5 C14.7761,5.5 15,5.27614 15,5 C15,4.72386 14.7761,4.5 14.5,4.5 L14.5,5.5 Z M4.75,4.5 C4.47386,4.5 4.25,4.72386 4.25,5 C4.25,5.27614 4.47386,5.5 4.75,5.5 L4.75,4.5 Z M14.5,4.5 L4.75,4.5 L4.75,5.5 L14.5,5.5 L14.5,4.5 Z" id="Shape" fill="#644BEC" fill-rule="nonzero"></path>
+            <path d="M14.5,9.625 C14.7761,9.625 15,9.4011 15,9.125 C15,8.8489 14.7761,8.625 14.5,8.625 L14.5,9.625 Z M4.75,8.625 C4.47386,8.625 4.25,8.8489 4.25,9.125 C4.25,9.4011 4.47386,9.625 4.75,9.625 L4.75,8.625 Z M14.5,8.625 L4.75,8.625 L4.75,9.625 L14.5,9.625 L14.5,8.625 Z" id="Shape" fill="#644BEC" fill-rule="nonzero"></path>
+            <circle id="Oval" stroke="#644BEC" cx="1" cy="0.875" r="1"></circle>
+            <circle id="Oval" stroke="#644BEC" cx="1" cy="5" r="1"></circle>
+            <circle id="Oval" stroke="#644BEC" cx="1" cy="9.125" r="1"></circle>
+        </g>
+    </g>
+</svg>

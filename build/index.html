@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mathlab</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <div class="modal-auth-reg modal-auth-reg-js">
+      <div class="modal-auth-reg__container">
+        <div class="modal-auth-reg__close">
+          <button class="modal-auth-reg__close-button modal-auth-reg-close-js"><svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16.2676 0.818078L1.31809 15.7676C0.955273 16.1304 0.97769 16.7411 1.36824 17.1317C1.75877 17.5222 2.36949 17.5446 2.7323 17.1818L17.6818 2.23229C18.0447 1.8694 18.0222 1.25875 17.6317 0.868212C17.2412 0.477698 16.6305 0.45519 16.2676 0.818078Z" fill="#1F2D48"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.6819 15.7676L2.73239 0.818087C2.36958 0.455273 1.75885 0.477727 1.36833 0.86824C0.977819 1.25875 0.955366 1.86949 1.31818 2.2323L16.2677 17.1818C16.6306 17.5447 17.2413 17.5222 17.6318 17.1317C18.0223 16.7412 18.0448 16.1305 17.6819 15.7676Z" fill="#1F2D48"/>
+</svg>
+
+          </button>
+        </div>
+        <div class="modal-auth-reg__content">
+          <div class="modal-auth-reg__content-item modal-auth-reg__content-item--active" data-content="0">
+            <div class="modal-auth-reg__title">Запись на занятия</div>
+            <form class="modal-auth-reg__form">
+              <div class="modal-auth-reg__form-row">
+                <input class="modal-auth-reg__input-text modal-auth-reg__input-text--lg modal-auth-reg__input-text--phone" type="number" value="" placeholder="Телефон">
+              </div>
+              <div class="modal-auth-reg__form-row">
+                <input class="modal-auth-reg__input-text modal-auth-reg__input-text--lg" type="email" value="" placeholder="Почта">
+              </div>
+              <div class="modal-auth-reg__form-row">
+                <input class="modal-auth-reg__input-text modal-auth-reg__input-text--lg" type="text" value="" placeholder="Имя ученика">
+              </div>
+              <div class="modal-auth-reg__form-row">
+                <input class="modal-auth-reg__input-text modal-auth-reg__input-text--lg" type="number" value="" placeholder="Класс">
+              </div>
+              <div class="modal-auth-reg__form-row modal-auth-reg__button">
+                <button class="modal-auth-reg__btn" type="submit">Оставить заявку</button>
+              </div>
+              <div class="modal-auth-reg__form-row">
+                <div class="modal-auth-reg__text">Нажимая на&nbsp;кнопку, я&nbsp;принимаю&nbsp;<a class="modal-auth-reg__text-link" href="#">условия соглашения</a></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal-auth-reg__overlay"></div>
+    </div>
+    <section class="first-screen">
+      <header class="header header-js">
+        <div class="header__container">
+          <div class="header__col header__col--left"><a class="header__logo-container" href="/"><svg width="127" height="21" viewBox="0 0 127 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+    @media screen and(max-width: 546px) {
+        path{
+            fill: #000000;
+        }
+    }
+</style>
+<path d="M22.2861 20.2928L18.548 2.01566H15.3235L11.1288 12.8839L6.96262 2.01566H3.73813L0 20.2928H3.65252L6.02095 8.38951L10.13 20.2928H12.099L16.2366 8.38951L18.6336 20.2928H22.2861Z" fill="url(#paint0_linear)" fill-opacity="0.9"/>
+<path d="M34.4631 6.67348V7.57235C33.3217 6.86415 31.952 6.45557 30.4967 6.45557C26.4161 6.45557 23.1346 9.61525 23.1346 13.4831C23.1346 17.351 26.4161 20.5107 30.4967 20.5107C31.952 20.5107 33.3217 20.1021 34.4631 19.3939V20.2928H38.1156V6.67348H34.4631ZM30.6108 17.2421C28.4707 17.2421 26.9012 15.6622 26.9012 13.4831C26.9012 11.3041 28.4707 9.72421 30.6108 9.72421C32.751 9.72421 34.3204 11.3041 34.3204 13.4831C34.3204 15.6622 32.751 17.2421 30.6108 17.2421Z" fill="url(#paint1_linear)" fill-opacity="0.9"/>
+<path d="M48.4255 16.0981C48.4255 16.5339 47.7407 17.2693 46.7705 17.2693C45.9715 17.2693 45.2867 16.5884 45.2867 15.4716V9.80592H48.6538V6.67348H45.2867V2.0429L41.6341 2.12462V6.67348H39.8935V9.80592H41.6341V16.5339C41.6341 19.3667 43.5175 20.5107 45.9715 20.5107C48.4541 20.5107 49.995 18.8764 49.995 18.8764L48.4255 16.0981Z" fill="url(#paint2_linear)" fill-opacity="0.9"/>
+<path d="M59.3519 6.45557C57.9251 6.45557 56.5269 7.05482 55.4996 8.06265V0H51.8471V20.2928H55.4996V12.8022C55.4996 10.9499 56.7552 9.64249 58.4958 9.64249C60.2365 9.64249 61.4921 10.9772 61.4921 12.8022V20.2928H65.2016V12.6932C65.2016 9.17943 62.8617 6.45557 59.3519 6.45557Z" fill="url(#paint3_linear)" fill-opacity="0.9"/>
+<path d="M71.8015 16.8063V2.01566H68.149V20.2928H79.5917V16.8063H71.8015Z" fill="url(#paint4_linear)" fill-opacity="0.9"/>
+<path d="M91.6452 6.67348V7.57235C90.5038 6.86415 89.1341 6.45557 87.6788 6.45557C83.5982 6.45557 80.3167 9.61525 80.3167 13.4831C80.3167 17.351 83.5982 20.5107 87.6788 20.5107C89.1341 20.5107 90.5038 20.1021 91.6452 19.3939V20.2928H95.2977V6.67348H91.6452ZM87.7929 17.2421C85.6528 17.2421 84.0833 15.6622 84.0833 13.4831C84.0833 11.3041 85.6528 9.72421 87.7929 9.72421C89.9331 9.72421 91.5025 11.3041 91.5025 13.4831C91.5025 15.6622 89.9331 17.2421 87.7929 17.2421Z" fill="url(#paint5_linear)" fill-opacity="0.9"/>
+<path d="M105.948 6.45557C104.464 6.45557 103.095 6.86415 101.953 7.59959V0H98.3006V20.2928H101.953V19.3667C103.095 20.1021 104.464 20.5107 105.948 20.5107C110.029 20.5107 113.31 17.351 113.31 13.4831C113.31 9.61525 110.029 6.45557 105.948 6.45557ZM105.834 17.2421C103.665 17.2421 102.124 15.6622 102.124 13.4831C102.124 11.3041 103.665 9.72421 105.834 9.72421C107.974 9.72421 109.544 11.3041 109.544 13.4831C109.544 15.6622 107.974 17.2421 105.834 17.2421Z" fill="url(#paint6_linear)" fill-opacity="0.9"/>
+<path d="M121.008 20.5107C124.746 20.5107 126.8 18.7947 126.8 16.3704C126.8 11.8488 118.24 12.0395 118.24 10.5958C118.24 9.91488 119.153 9.47906 120.522 9.47906C122.919 9.47906 124.689 11.1406 124.689 11.1406L127 9.1522C127 9.1522 124.66 6.45557 120.608 6.45557C116.87 6.45557 114.844 8.1716 114.844 10.5958C114.844 15.1175 123.376 14.9268 123.376 16.3704C123.376 17.0514 122.491 17.4872 121.093 17.4872C118.696 17.4872 116.956 15.8257 116.956 15.8257L114.644 17.8141C114.644 17.8141 116.984 20.5107 121.008 20.5107Z" fill="url(#paint7_linear)" fill-opacity="0.9"/>
+<defs>
+<linearGradient id="paint0_linear" x1="127" y1="20.5107" x2="0" y2="20.5107" gradientUnits="userSpaceOnUse">
+<stop stop-color="#644BEC"/>
+<stop offset="1" stop-color="#AF48C9"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="127" y1="20.5107" x2="0" y2="20.5107" gradientUnits="userSpaceOnUse">
+<stop stop-color="#644BEC"/>
+<stop offset="1" stop-color="#AF48C9"/>
+</linearGradient>
+<linearGradient id="paint2_linear" x1="127" y1="20.5107" x2="0" y2="20.5107" gradientUnits="userSpaceOnUse">
+<stop stop-color="#644BEC"/>
+<stop offset="1" stop-color="#AF48C9"/>
+</linearGradient>
+<linearGradient id="paint3_linear" x1="127" y1="20.5107" x2="0" y2="20.5107" gradientUnits="userSpaceOnUse">
+<stop stop-color="#644BEC"/>
+<stop offset="1" stop-color="#AF48C9"/>
+</linearGradient>
+<linearGradient id="paint4_linear" x1="127" y1="20.5107" x2="0" y2="20.5107" gradientUnits="userSpaceOnUse">
+<stop stop-color="#644BEC"/>
+<stop offset="1" stop-color="#AF48C9"/>
+</linearGradient>
+<linearGradient id="paint5_linear" x1="127" y1="20.5107" x2="0" y2="20.5107" gradientUnits="userSpaceOnUse">
+<stop stop-color="#644BEC"/>
+<stop offset="1" stop-color="#AF48C9"/>
+</linearGradient>
+<linearGradient id="paint6_linear" x1="127" y1="20.5107" x2="0" y2="20.5107" gradientUnits="userSpaceOnUse">
+<stop stop-color="#644BEC"/>
+<stop offset="1" stop-color="#AF48C9"/>
+</linearGradient>
+<linearGradient id="paint7_linear" x1="127" y1="20.5107" x2="0" y2="20.5107" gradientUnits="userSpaceOnUse">
+<stop stop-color="#644BEC"/>
+<stop offset="1" stop-color="#AF48C9"/>
+</linearGradient>
+</defs>
+</svg>
+</a>
+            <div class="header__nav">
+              <nav class="nav"><a class="nav__item" href="#">Преподаватели</a><a class="nav__item" href="#">Стоимость</a></nav>
+            </div>
+          </div>
+          <div class="header__col header__col--right"><a class="header__text" href="tel:+7495747723">+7 (495) 374-77-23</a><a class="header__btn button-open-auth-js" href="#">Записаться</a><a class="header__btn-phone-mobile" href="tel:+7495747723"><span class="header__btn-phone-mobile-icon">
+                <svg width="28" height="28" aria-hidden="true">
+                  <use xlink:href="img/social/social-sprite.svg#icon-phone"></use>
+                </svg></span></a><a class="header__link" href="#" data-modal="0"><span class="header__link-text-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 12C24 5.36774 18.633 0 12 0C5.36774 0 0 5.367 0 12C0 18.5735 5.32214 24 12 24C18.6504 24 24 18.6037 24 12ZM12 1.40625C17.8414 1.40625 22.5938 6.15857 22.5938 12C22.5938 14.1368 21.9582 16.1907 20.7795 17.9304C16.0466 12.8394 7.96198 12.8302 3.22046 17.9304C2.04181 16.1907 1.40625 14.1368 1.40625 12C1.40625 6.15857 6.15857 1.40625 12 1.40625ZM4.09753 19.0547C8.30566 14.3346 15.6954 14.3357 19.9023 19.0547C15.6801 23.7784 8.32159 23.7799 4.09753 19.0547Z" fill="black"/>
+<path d="M12 12.7031C14.3262 12.7031 16.2188 10.8105 16.2188 8.48438V7.07812C16.2188 4.75195 14.3262 2.85938 12 2.85938C9.67383 2.85938 7.78125 4.75195 7.78125 7.07812V8.48438C7.78125 10.8105 9.67383 12.7031 12 12.7031ZM9.1875 7.07812C9.1875 5.52722 10.4491 4.26562 12 4.26562C13.5509 4.26562 14.8125 5.52722 14.8125 7.07812V8.48438C14.8125 10.0353 13.5509 11.2969 12 11.2969C10.4491 11.2969 9.1875 10.0353 9.1875 8.48438V7.07812Z" fill="black"/>
+</svg>
+</span><span class="header__link-text">Войти</span></a>
+            <button class="header__mobile-menu mobile-menu-button-js"><svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M22.0709 9H0.929074C0.415977 9 0 9.44768 0 10C0 10.5523 0.415977 11 0.929074 11H22.0709C22.5841 11 23 10.5523 23 10C23 9.44773 22.5841 9 22.0709 9Z" fill="#1F2D48"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M22.0709 0H0.929074C0.415977 0 0 0.447732 0 1C0 1.55227 0.415977 2 0.929074 2H22.0709C22.5841 2 23 1.55227 23 1C23 0.447732 22.5841 0 22.0709 0Z" fill="#1F2D48"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M22.0709 18H0.929074C0.415977 18 0 18.4477 0 19C0 19.5523 0.415977 20 0.929074 20H22.0709C22.5841 20 23 19.5523 23 19C23 18.4477 22.5841 18 22.0709 18Z" fill="#1F2D48"/>
+</svg>
+
+            </button>
+          </div>
+          <div class="mobile-menu mobile-menu-js">
+            <div class="mobile-menu__inner">
+              <div class="mobile-menu__close">
+                <button class="mobile-menu__close-button mobile-menu-close-button-js"><svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16.2676 0.818078L1.31809 15.7676C0.955273 16.1304 0.97769 16.7411 1.36824 17.1317C1.75877 17.5222 2.36949 17.5446 2.7323 17.1818L17.6818 2.23229C18.0447 1.8694 18.0222 1.25875 17.6317 0.868212C17.2412 0.477698 16.6305 0.45519 16.2676 0.818078Z" fill="#1F2D48"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.6819 15.7676L2.73239 0.818087C2.36958 0.455273 1.75885 0.477727 1.36833 0.86824C0.977819 1.25875 0.955366 1.86949 1.31818 2.2323L16.2677 17.1818C16.6306 17.5447 17.2413 17.5222 17.6318 17.1317C18.0223 16.7412 18.0448 16.1305 17.6819 15.7676Z" fill="#1F2D48"/>
+</svg>
+
+                </button>
+              </div>
+              <ul class="mobile-menu__list">
+                <li class="mobile-menu__list-item"><a class="mobile-menu__link" href="#">Преподаватели</a></li>
+                <li class="mobile-menu__list-item"><a class="mobile-menu__link" href="#">Стоимость</a></li>
+                <li class="mobile-menu__list-item"><a class="mobile-menu__link" href="tel:+74994904467">+7 (499) 490-44-67</a></li>
+              </ul>
+              <div class="mobile-menu__button">
+                <button class="button button_full-width button-open-auth-js">Записаться</button>
+              </div>
+              <div class="mobile-menu__contacts">
+                <div class="mobile-menu__contacts-text">Если у вас есть вопросы – напишите нам!</div>
+                <ul class="mobile-menu__social-list">
+                  <li class="mobile-menu__social-item"><a class="mobile-menu__social-link" href="#" title="Telegram">
+                      <svg width="48" height="48" aria-hidden="true">
+                        <use xlink:href="img/social/social-sprite.svg#icon-telegram"></use>
+                      </svg></a></li>
+                  <li class="mobile-menu__social-item"><a class="mobile-menu__social-link" href="#" title="Whatsapp">
+                      <svg width="48" height="48" aria-hidden="true">
+                        <use xlink:href="img/social/social-sprite.svg#icon-whatsapp"></use>
+                      </svg></a></li>
+                  <li class="mobile-menu__social-item"><a class="mobile-menu__social-link" href="#" title="Viber">
+                      <svg width="48" height="48" aria-hidden="true">
+                        <use xlink:href="img/social/social-sprite.svg#icon-viber"></use>
+                      </svg></a></li>
+                  <li class="mobile-menu__social-item"><a class="mobile-menu__social-link" href="#" title="Messenger">
+                      <svg width="48" height="48" aria-hidden="true">
+                        <use xlink:href="img/social/social-sprite.svg#icon-messenger"></use>
+                      </svg></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="first-screen__container">
+        <div class="first-screen__text">
+          <h1 class="first-screen__title">Делаем учеников самыми сильными по математике в классе. <span class="first-screen__title_accent">Обучение математике от&nbsp;призеров олимпиад МГУ&nbsp;и&nbsp;Физтеха</span></h1>
+          <p class="first-screen__subtitle">
+             Оставьте заявку на занятие с преподавателями MathLabs</p>
+          <div class="first-screen__form-container">
+            <form class="form" action="#">
+              <div class="form__row">
+                <div class="form__item form__wide-input first-screen__input">
+                  <input class="input input_round" type="text" placeholder="Введите ваш телефон">
+                </div>
+                <div class="form__item form__item_mobile-full">
+                  <button class="button button_medium button_full-width-xs button-open-auth-mobile-js">Записаться</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="features-block">
+      <div class="features-block__container">
+        <div class="features-block__row">
+          <div class="features-block__col">
+                <div class="feature">
+                  <div class="feature__icon"><img src="img/features/feature-1.svg" alt=""></div>
+                  <p class="feature__text">Выясняем, на какие темы стоит сделать упор в подготовке. Чаще всего на все :)</p>
+                </div>
+          </div>
+          <div class="features-block__col">
+                <div class="feature">
+                  <div class="feature__icon"><img src="img/features/feature-2.svg" alt=""></div>
+                  <p class="feature__text">Проводим первое тестирование, чтобы определить уровень ученика</p>
+                </div>
+          </div>
+          <div class="features-block__col">
+                <div class="feature">
+                  <div class="feature__icon"><img src="img/features/feature-3.svg" alt=""></div>
+                  <p class="feature__text">Проводим занятия так, чтобы учащийся постоянно был мотивирован к росту</p>
+                </div>
+          </div>
+          <div class="features-block__col">
+                <div class="feature">
+                  <div class="feature__icon"><img src="img/features/feature-4.svg" alt=""></div>
+                  <p class="feature__text">Точно знаем, как сдавать экзамены, ведь мы сами сдали их на 100 баллов</p>
+                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="task-block">
+      <div class="task-block__container"> 
+        <div class="task-block__title"> 
+          <h2 class="title">Давайте сразу с интересной задачи!</h2>
+        </div>
+        <div class="task-block__content">
+          <div class="task-block__content-row">
+            <div class="task-block__content-title">Дано:</div>
+            <div class="task-block__content-text">В стране Кидцуния любые два города соединены дорогой с односторонним движением. </div>
+          </div>
+          <div class="task-block__content-row">
+            <div class="task-block__content-title">Доказать:</div>
+            <div class="task-block__content-text task-block__content-text_bold">Докажите, что можно проехать по всем городам,  побывав в каждом по одному разу.</div>
+          </div>
+        </div>
+        <div class="task-block__left"></div>
+        <div class="task-block__right"></div>
+        <div class="task-block__line">
+          <svg viewBox="0 0 901 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 2L36.3446 27H862.635L899 2" stroke="#B0C1FF"></path>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <section class="banner-section">
+      <div class="banner-section__container">
+        <div class="banner">
+          <div class="banner__title">Стать самым сильным по математике в&nbsp;классе</div>
+          <div class="banner__button">
+            <button class="button button-open-auth-js">Оставить заявку</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="quote-block">
+      <div class="quote-block__inner">
+        <div class="quote-block__container">
+          <div class="quote-block__row">
+            <div class="quote-block__col">
+              <div class="quote-block__quote">
+                <div class="quote-block__quote-text">Большинство людей настолько боятся самого названия математики, что они готовы совершенно искренне преувеличивать свою неспособность к математике</div>
+                <div class="quote-block__quote-footer">
+                  <div class="quote-block__quote-name">Годфри Харди</div>
+                  <div class="quote-block__quote-position">Английский математик</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="quote-block__person"><img src="img/quote-block/godfrey.jpg" alt="Годфри Харди"></div>
+      </div>
+    </div>
+    <div class="teachers-block">
+      <div class="teachers-block__container">
+        <div class="teachers-block__title"> 
+          <h2 class="title">Знакомтесь с нашими преподавателями</h2>
+        </div>
+        <div class="teachers-block__slider teacher-block__slider-js">
+          <div class="teachers-block__teacher-card">
+            <div class="teacher-card">
+              <div class="teacher-card__col">
+                <div class="teacher-card__image"><img src="img/teacher-card/teacher-1.jpg" alt="Горяев Альберт"></div>
+              </div>
+              <div class="teacher-card__info-wrapper teacher-card__col">
+                <div class="teacher-card__info">
+                  <h3 class="teacher-card__name">Горяев Альберт</h3>
+                  <div class="teacher-card__university">Механико-математический факультет МГУ<span class="teacher-card__university-logo"><img src="img/teacher-card/logo-mgu.png" alt="Логотип МГУ"></span></div>
+                  <p class="teacher-card__about">Сын ученого, который занимается вопросами космического излучения в РАН. Альберт любит математику так сильно, что берет книги по функциональному анализу даже на встречи с друзьями.</p>
+                  <p class="teacher-card__about">Подготовил ряд школьников, которые поступили в ряд ведущих лицеев и математических школ Москвы.</p>
+                  <div class="teacher-card__footer">
+                    <div class="teacher-card__footer-item">
+                      <div class="teacher-card__footer-item-title">ЕГЭ по математике</div>
+                      <div class="teacher-card__footer-item-data">100 из 100 баллов</div>
+                    </div>
+                    <div class="teacher-card__footer-item">
+                      <div class="teacher-card__footer-item-title">Доп. экзамен МГУ</div>
+                      <div class="teacher-card__footer-item-data">100 из 100 баллов</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="teachers-block__teacher-card">
+            <div class="teacher-card">
+              <div class="teacher-card__info-wrapper teacher-card__col">
+                <div class="teacher-card__info">
+                  <h3 class="teacher-card__name">Каплоухая Нина</h3>
+                  <div class="teacher-card__university">МФТИ. Факультет управления и прикладной математики<span class="teacher-card__university-logo"><img src="img/teacher-card/logo-mfti.png" alt="Логотип МФТИ"></span></div>
+                  <p class="teacher-card__about">Cпециалист по разбору задач в нашей команде. Нина подбирает ученикам MathLabs самые интересные задачи и прикладывает все усилия к их развитию. Кроме этого, Нина занимается анализом данных. Нина не только сдала ЕГЭ на 100 баллов, но и стала победителем олимпиад “Ломоносов” и “Межвузовской математической олимпиады”, а также призером олимпиад “Покори Воробьевы горы”, “МФТИ” и «Курчатов»</p>
+                  <div class="teacher-card__footer">
+                    <div class="teacher-card__footer-item">
+                      <div class="teacher-card__footer-item-title">ЕГЭ по математике</div>
+                      <div class="teacher-card__footer-item-data">100 из 100 баллов</div>
+                    </div>
+                    <div class="teacher-card__footer-item">
+                      <div class="teacher-card__footer-item-title">Победитель и призёр олимпиад</div>
+                      <div class="teacher-card__footer-item-data">“Ломоносов”<br>“Покори Воробьевы горы”<br>“Межвузовская олимпиада”<br>“МФТИ Курчатов”</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="teacher-card__col">
+                <div class="teacher-card__image"><img src="img/teacher-card/teacher-2.jpg" alt="Каплоухая Нина"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="programm-block">
+      <div class="programm-block__container">
+        <div class="programm-block__title">
+          <h3 class="title">Все, что нужно для успешной подготовки к олимпиадам и сдаче экзаменов</h3>
+        </div>
+        <div class="programm-block__row">
+          <div class="programm-block__col programm-block__col-12">
+                <div class="lesson-card lesson-card_medium lesson-card_dark lesson-card_bg-2">
+                  <h4 class="lesson-card__title">Олимпиадная математика</h4>
+                  <p class="lesson-card__text">Научим решать задачи, которые встречаются на олимпиадах. Разберем основные методы и подходы к решению задач</p>
+                  <div class="lesson-card__button">
+                    <button class="button button-open-auth-js button_white">Записаться</button>
+                  </div>
+                </div>
+          </div>
+          <div class="programm-block__col programm-block__col-12">
+                <div class="lesson-card lesson-card_medium lesson-card_blue lesson-card_bg-1">
+                  <h4 class="lesson-card__title">Школьная программа</h4>
+                  <p class="lesson-card__text">Поможем разобраться с отдельными темами по математике, решим множество задач.</p>
+                  <div class="lesson-card__button">
+                    <button class="button button-open-auth-js button_white">Записаться</button>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="programm-block__row">
+          <div class="programm-block__col programm-block__col-6">
+                <div class="lesson-card lesson-card_medium lesson-card_tall-md lesson-card_white">
+                  <h4 class="lesson-card__title">ЕГЭ по математике</h4>
+                  <p class="lesson-card__text">Научим решать задачи, которые встречаются на олимпиадах. Разберем основные методы и подходы к решению задач</p>
+                  <div class="lesson-card__button">
+                    <button class="button button-open-auth-js">Записаться</button>
+                  </div>
+                </div>
+          </div>
+          <div class="programm-block__col programm-block__col-6">
+                <div class="lesson-card lesson-card_medium lesson-card_tall-md lesson-card_white">
+                  <h4 class="lesson-card__title">Международные экзамены</h4>
+                  <p class="lesson-card__text">Готовитесь к сдаче GRE или математической части GMAT? Сможем улучшить баллы на сдаче этих экзаменов!</p>
+                  <div class="lesson-card__button">
+                    <button class="button button-open-auth-js">Записаться</button>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lessons-block">
+      <div class="lessons-block__container">
+        <div class="lessons-block__title">
+          <h3 class="title">Повышаем математический уровень и готовим к олимпиадам</h3>
+        </div>
+        <div class="lessons-block__row">
+          <div class="lessons-block__col">
+                <div class="lesson-card lesson-card_tall lesson-card_blue lesson-card_bg-3">
+                  <h4 class="lesson-card__title">Повышение уровня</h4>
+                  <p class="lesson-card__text">Если у вас пробелы в школьном материале или есть непонимание определенных тем, то преподаватели MathLabs смогут повысить уровень учащегося.</p>
+                  <div class="lesson-card__button">
+                    <button class="button button-open-auth-js button_white">Записаться</button>
+                  </div>
+                </div>
+          </div>
+          <div class="lessons-block__col">
+                <div class="lesson-card lesson-card_tall lesson-card_dark lesson-card_bg-4">
+                  <h4 class="lesson-card__title">Олимпиадная математика</h4>
+                  <p class="lesson-card__text">Мы победили в самых известных олимпиадах в России и точно знаем, как подготовить школьника к призовым местам. Это интересный путь, который сильно развивает математические способности.</p>
+                  <div class="lesson-card__button">
+                    <button class="button button-open-auth-js button_white">Записаться</button>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="price-block">
+      <div class="price-block__container">
+        <div class="price-block__title"> 
+          <h5 class="title">Стоимость занятий</h5>
+        </div>
+        <div class="price-block__row">
+          <div class="price-block__col"> 
+                <div class="price-card price-card_green">
+                  <h5 class="price-card__title">Занятия в группах</h5>
+                  <div class="price-card__price">690 ₽/занятие</div>
+                  <div class="price-card__button">
+                    <button class="button button-open-auth-js">Записаться</button>
+                  </div>
+                </div>
+          </div>
+          <div class="price-block__col"> 
+                <div class="price-card price-card_pink">
+                  <h5 class="price-card__title">Общая подготовка</h5>
+                  <div class="price-card__price">990 ₽/занятие</div>
+                  <div class="price-card__button">
+                    <button class="button button-open-auth-js">Записаться</button>
+                  </div>
+                </div>
+          </div>
+          <div class="price-block__col"> 
+                <div class="price-card price-card_purple">
+                  <h5 class="price-card__title">Олимпиадная математика</h5>
+                  <div class="price-card__price">1190 ₽/занятие</div>
+                  <div class="price-card__button">
+                    <button class="button button-open-auth-js">Записаться</button>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="price-block__description">На первом зантии определяем уровень и выявим места, на которые нужно сделать упор в подготовке</div>
+      </div>
+    </div>
+    <div class="offer-block offer-block_bg">
+      <div class="offer-block__container">
+        <div class="offer-block__title">
+          <h5 class="title title_white">Присоединяйтесь к нам</h5>
+        </div>
+        <p class="offer-block__description">Начните с бесплатного пробного занятия</p>
+        <div class="offer-block__form">
+          <form class="form" action="#">
+            <div class="form__row">
+              <div class="form__item form__wide-input offer-block__form-input">
+                <input class="input input_round input_white" type="text" placeholder="Введите ваш телефон">
+              </div>
+              <div class="form__item">
+                <button class="button button_dark button_medium button-open-auth-mobile-js">Записаться</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="footer-main">
+      <div class="footer-main__container">
+        <div class="footer-main__row">
+          <div class="footer-main__info"><a class="footer-main__logo" href="#">Команда MathLabs</a>
+            <p class="footer-main__about-team">Математик Годфри Харди писал: «Большинство людей настолько боятся самого названия математики, что они готовы совершенно искренне преувеличивать свою неспособность к математике». Мы полностью разделяем это мнение и считаем, что в большинстве случаев ребенку не хватает упорства, но никак не способностей.</p>
+          </div>
+          <div class="footer-main__contacts-wrapper">
+            <div class="footer-main__contacts">
+              <div class="footer-main__contacts-text">Наши соц.сети</div>
+              <ul class="footer-main__social-list">
+                <li class="footer-main__social-item"><a class="footer-main__social-link" href="#" title="Instagram">
+                    <svg width="48" height="48" aria-hidden="true">
+                      <use xlink:href="img/social/social-sprite.svg#icon-instagram"></use>
+                    </svg></a></li>
+                <li class="footer-main__social-item"><a class="footer-main__social-link" href="#" title="Facebook">
+                    <svg width="48" height="48" aria-hidden="true">
+                      <use xlink:href="img/social/social-sprite.svg#icon-facebook"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+            <div class="footer-main__contacts">
+              <div class="footer-main__contacts-text">Если у вас есть вопросы – напишите нам!</div>
+              <ul class="footer-main__social-list">
+                <li class="footer-main__social-item"><a class="footer-main__social-link" href="#" title="Telegram">
+                    <svg width="48" height="48" aria-hidden="true">
+                      <use xlink:href="img/social/social-sprite.svg#icon-telegram"></use>
+                    </svg></a></li>
+                <li class="footer-main__social-item"><a class="footer-main__social-link" href="#" title="Whatsapp">
+                    <svg width="48" height="48" aria-hidden="true">
+                      <use xlink:href="img/social/social-sprite.svg#icon-whatsapp"></use>
+                    </svg></a></li>
+                <li class="footer-main__social-item"><a class="footer-main__social-link" href="#" title="Viber">
+                    <svg width="48" height="48" aria-hidden="true">
+                      <use xlink:href="img/social/social-sprite.svg#icon-viber"></use>
+                    </svg></a></li>
+                <li class="footer-main__social-item"><a class="footer-main__social-link" href="#" title="Messenger">
+                    <svg width="48" height="48" aria-hidden="true">
+                      <use xlink:href="img/social/social-sprite.svg#icon-messenger"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-main__rights-block">
+          <div class="footer-main__rights-block-item footer-main__rights-block-copyright">
+            <div class="footer-main__copyright">© 2020 MathLabs. Все права защищиены   </div>
+          </div>
+          <div class="footer-main__rights-block-item"><a class="footer-main__link" href="#">Политика конфиденциальности     </a></div>
+          <div class="footer-main__rights-block-item"><a class="footer-main__link" href="#">Пользовательское соглашение</a></div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

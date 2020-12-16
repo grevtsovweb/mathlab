@@ -1,0 +1,33 @@
+.lesson
+  .lesson__container
+    .lesson__header
+      .lesson__title Курс подготовки к&nbsp;олимпиаде &laquo;Физтех&raquo; по&nbsp;математике
+      .lesson__author
+        img.lesson__author-img(src="../img/examples/1.png")
+        .lesson__author-title Альберт Горяев
+      .lesson__history 10 занятий
+      a.lesson__link(href="#") О курсе
+    .lesson__content.lesson__content--text
+      .lesson__content-col
+        .lesson__content-title Вводное занятие
+        ul.lesson__content-list
+          li.lesson__content-list-item Знакомство с курсом и платформой
+          li.lesson__content-list-item Секреты успешной сдачи ЕГЭ по математике на 90+ баллов
+          li.lesson__content-list-item Решение сложной, но интересной задачи из ЕГЭ
+          li.lesson__content-list-item Интерактив: выбор задачи на разбор
+      .lesson__content-col
+        a.lesson__btn-download(href="#") Скачать материалы
+    .lesson__content.lesson__content--video
+      .lesson__video-wrapper
+        .lesson__video-poster
+          img.lesson__video-poster-img(src="img/examples/2.png")
+        video#lesson-video.lesson__video(
+          controls="true"
+        )
+          source(
+            src="video/1.mp4"
+            type="video/mp4"
+          )
+    .lesson__footer
+      .lesson__btn.lesson__btn--prev.lesson__btn--disable Предыдущее занятие
+      a.lesson__btn.lesson__btn--next(href="#") Следующее занятие

@@ -1,0 +1,47 @@
+.modal-auth-reg
+  .modal-auth-reg__container
+    .modal-auth-reg__nav
+      .modal-auth-reg__nav-item(data-content="0") Регистрация
+      .modal-auth-reg__nav-item.modal-auth-reg__nav-item--active(data-content="1") Вход
+    .modal-auth-reg__content
+      .modal-auth-reg__content-item(data-content="0")
+        .modal-auth-reg__title Регистрация
+        form.modal-auth-reg__form
+          .modal-auth-reg__form-row
+            input.modal-auth-reg__input-text(type="text" value="" placeholder="Ваше имя")
+          .modal-auth-reg__form-row
+            input.modal-auth-reg__input-text.modal-auth-reg__input-text--phone(type="text" value="" placeholder="+7 (___)___-__-__")
+          .modal-auth-reg__form-row
+            input.modal-auth-reg__input-text(type="text" value="" placeholder="Ваш e-mail")
+          .modal-auth-reg__form-row.modal-auth-reg__form-row--2-col
+            input.modal-auth-reg__input-text(type="text" value="" placeholder="Имя ребенка")
+            .modal-auth-reg__select-wrapper
+              select.modal-auth-reg__select
+                option.modal-auth-reg__select-option(disabled selected value) Класс
+                option.modal-auth-reg__select-option(value="1") 1
+                option.modal-auth-reg__select-option(value="2") 2
+                option.modal-auth-reg__select-option(value="3") 3
+                option.modal-auth-reg__select-option(value="4") 4
+                option.modal-auth-reg__select-option(value="5") 5
+                option.modal-auth-reg__select-option(value="6") 6
+          .modal-auth-reg__form-row
+            button.modal-auth-reg__btn(type="submit") Зарегистрироваться
+          .modal-auth-reg__form-row
+            .modal-auth-reg__text
+              | Нажимая на&nbsp;кнопку, я&nbsp;принимаю&nbsp;
+              a.modal-auth-reg__text-link(href="#") условия соглашения
+      .modal-auth-reg__content-item.modal-auth-reg__content-item--active(data-content="1")
+        .modal-auth-reg__title
+          | Вход в&nbsp;кабинет&nbsp;
+          br
+          | ученика
+        form.modal-auth-reg__form
+          .modal-auth-reg__form-row
+            input.modal-auth-reg__input-text(type="text" value="" placeholder="E-mail или телефон")
+          .modal-auth-reg__form-row
+            input.modal-auth-reg__input-text(type="text" value="" placeholder="Пароль")
+          .modal-auth-reg__form-row
+            button.modal-auth-reg__btn(type="submit") Войти в&nbsp;MathLabs
+          .modal-auth-reg__form-row
+            a.modal-auth-reg__link(href="#") Забыли пароль?
+  .modal-auth-reg__overlay

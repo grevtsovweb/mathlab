@@ -1,0 +1,6 @@
+mixin lesson-card(className, buttonColor, title, text)
+    .lesson-card(class= className)
+        h4.lesson-card__title= title
+        p.lesson-card__text= text
+        .lesson-card__button
+            button.button.button-open-auth-js(class= buttonColor) Записаться

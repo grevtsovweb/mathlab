@@ -1,0 +1,46 @@
+.feature
+    border: 4px solid $color-white-2
+    border-radius: 12px
+    padding: 28px 34px 50px 34px
+    height: 100%
+
+    +md-block()
+        padding: 16px 20px 34px 20px
+
+    +sm-block()
+        padding: 28px 36px 45px 36px
+
+    &__icon
+        margin-bottom: 35px
+
+        +md-block()
+            margin-bottom: 15px
+        
+        img 
+            display: block
+            max-height: 32px
+            max-width: 32px
+
+            +md-block()
+                max-height: 19px
+                max-width: 19px
+
+            +sm-block()
+                max-height: 32px
+                max-width: 32px
+
+    &__text
+        font-family: $font-default
+        font-size: 18px
+        line-height: 28px
+        color: $color-black
+        opacity: .7
+        line-height: 1.5
+
+        +md-block()
+            font-size: 14px
+            line-height: 1.3
+
+        +sm-block()
+            font-size: 18px
+            line-height: 1.5

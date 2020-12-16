@@ -1,0 +1,50 @@
+.cover-sign-up
+  .cover-sign-up__container
+    .cover-sign-up__col.cover-sign-up__col--left
+      h1.cover-sign-up__title
+        | Запишитесь и&nbsp;сразу&nbsp;
+        br
+        | пройдите вводное занятие&nbsp;
+        br
+        | или получите консультацию
+      ul.cover-sign-up__list
+        li.cover-sign-up__list-item
+          | Стоимость вводного занятия&nbsp;&mdash;&nbsp;
+          b.cover-sign-up__list-item-text-bold 0&nbsp;руб.
+        li.cover-sign-up__list-item
+          | Подберем план обучения на&nbsp;основе&nbsp;
+          b.cover-sign-up__list-item-text-bold тестирования
+        li.cover-sign-up__list-item
+          | Достигнем цели и&nbsp;поднимем&nbsp;
+          b.cover-sign-up__list-item-text-bold уровень знаний
+    .cover-sign-up__col.cover-sign-up__col--right
+      form.cover-sign-up__form
+        .cover-sign-up__form-part.cover-sign-up__form-part--top
+          .cover-sign-up__form-row
+            input.cover-sign-up__input-text(type="text" value="" placeholder="Ваше имя")
+          .cover-sign-up__form-row
+            input.cover-sign-up__input-text.cover-sign-up__input-text--phone(type="text" value="" placeholder="+7 (___)___-__-__")
+          .cover-sign-up__form-row
+            input.cover-sign-up__input-text(type="text" value="" placeholder="Ваш e-mail")
+          .cover-sign-up__form-row.cover-sign-up__form-row--2-col
+            input.cover-sign-up__input-text(type="text" value="" placeholder="Имя ребенка")
+            .cover-sign-up__select-wrapper
+              select.cover-sign-up__select
+                option.cover-sign-up__select-option(disabled selected value) Класс
+                option.cover-sign-up__select-option(value="1") 1
+                option.cover-sign-up__select-option(value="2") 2
+                option.cover-sign-up__select-option(value="3") 3
+                option.cover-sign-up__select-option(value="4") 4
+                option.cover-sign-up__select-option(value="5") 5
+                option.cover-sign-up__select-option(value="6") 6
+          .cover-sign-up__form-row
+            button.cover-sign-up__btn.cover-sign-up__btn--blue(type="submit") Начать занятия
+          .cover-sign-up__form-row
+            button.cover-sign-up__btn.cover-sign-up__btn--white(type="submit") Получить консультацию
+          .cover-sign-up__form-row
+            .cover-sign-up__text
+              | Нажимая на&nbsp;кнопку, я&nbsp;принимаю&nbsp;
+              a.cover-sign-up__text-link(href="#") условия соглашения
+        .cover-sign-up__form-part.cover-sign-up__form-part--bottom
+          .cover-sign-up__text.cover-sign-up__text--big У&nbsp;вас уже есть аккаунт?
+          a.cover-sign-up__link(href="#") Войти

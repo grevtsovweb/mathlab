@@ -1,0 +1,40 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        title Mathlab
+        meta(name="keywords" content="")
+        meta(name="description" content="")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="styles/style.css")
+        
+    body
+        include modal-auth/modal-auth
+        section.first-screen
+            include header/header-2
+            .first-screen__container
+                .first-screen__text
+                    h1.first-screen__title Делаем учеников самыми сильными по математике в классе. <span class="first-screen__title_accent">Обучение математике от&nbsp;призеров олимпиад МГУ&nbsp;и&nbsp;Физтеха</span>
+                    p.first-screen__subtitle 
+                        | Оставьте заявку на занятие с преподавателями MathLabs
+                    .first-screen__form-container
+                        form(action="#").form
+                            .form__row
+                                .form__item.form__wide-input.first-screen__input
+                                    input(type="text", placeholder="Введите ваш телефон").input.input_round
+                                .form__item.form__item_mobile-full
+                                    button.button.button_medium.button_full-width-xs.button-open-auth-mobile-js Записаться
+        include features-block/features-block
+        include task-block/task-block
+        include banner-section/banner-section
+        include quote-block/quote-block
+        include teachers-block/teachers-block
+        include programm-block/programm-block
+        include lessons-block/lessons-block
+        include price-block/price-block
+        include offer-block/offer-block
+        include footer-main/footer-main
+
+        script(src="js/jquery.min.js")
+        script(src="js/owl.carousel.min.js")
+        script(src="js/main.js")

@@ -1,0 +1,175 @@
+.pay-for-classes
+  background: $color-white
+  box-shadow: 0px 4px 10px rgba($color-black-2, 0.05)
+  border-radius: 8px
+  padding: 30px
+  &__container
+  &__title
+    font: bold 24px/1 $font-default
+    color: $color-black
+    letter-spacing: 0.02em
+    margin: 0 0 12px
+  &__descr
+    font: 400 16px/1.375 $font-default
+    color: rgba($color-black,0.7)
+    margin: 0 0 12px
+    &:last-child
+      margin-bottom: 0
+  &__descr-bold
+    font: bold 16px/1 $font-default
+    color: $color-blue
+    margin: 0 0 0 5px
+  &__descr-red
+    color: $color-red
+  &__descr-link
+    text-decoration: none
+    color: $color-blue
+    @include hover
+  &__offers-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    margin: 30px 0 30px 0
+    width: 100%
+  &__offers-item
+    background: rgba($color-blue, 0.05)
+    border-radius: 4px
+    padding: 30px 8px 30px 8px
+    position: relative
+    width: 18.072289156626506%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: stretch
+    height: 251px
+    &:before
+      content: ''
+      display: block
+      width: 100%
+      height: 3.9px
+      background: $color-purple
+      border-radius: 4px 4px 0 0
+      position: absolute
+      left: 0
+      right: 0
+      top: 0
+    &--selected
+      background: $color-blue
+      &:after
+        content: ''
+        @extend .icon-fire
+        position: absolute
+        left: 50%
+        top: 11px
+        transform: translate3d(-50%,0,0)
+  &__offers-title
+    font: 400 13px/1 $font-default
+    color: rgba($color-black,0.5)
+    text-align: center
+    margin: 0 0 8px
+    .pay-for-classes__offers-item--selected &
+      color: rgba($color-white,0.5)
+  &__offers-price
+    font: bold 20.8px/1 $font-default
+    color: $color-black
+    text-align: center
+    margin: 0 0 14px
+    .pay-for-classes__offers-item--selected &
+      color: $color-white
+  &__offers-saving
+    font: 400 12px/1 $font-default
+    color: $color-black
+    white-space: nowrap
+    text-align: center
+    background: rgba($color-purple, 0.1);
+    border-radius: 18px
+    padding: 5px 10px 4px
+    .pay-for-classes__offers-item--selected &
+      color: $color-white
+      background: rgba($color-white,0.2)
+  &__offers-descr
+    font: 400 12px/1 $font-default
+    color: rgba($color-black,0.5)
+    text-align: center
+    margin: auto 0 15px 0
+    .pay-for-classes__offers-item--selected &
+      color: rgba($color-white,0.5)
+  &__offers-btn
+    text-decoration: none
+    font: bold 12px/1 $font-default
+    color: $color-white
+    text-align: center
+    background: $color-purple
+    padding: 12px 15px 11px
+    white-space: nowrap
+    width: 100%
+    display: block
+    border-radius: 18px
+    @include hover
+    .pay-for-classes__offers-item--selected &
+      background: $color-white
+      color: $color-blue
+  &__how-it-works
+    border-top: 1px solid $color-white-2
+    padding: 29px 0 0 0
+  &__how-it-works-row
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+  &__how-it-works-title
+    text-align: center
+    font: bold 24px/1 $font-default
+    letter-spacing: 0.02em
+    color: $color-black
+    text-align: center
+    margin: 0 0 30px
+    width: 100%
+  &__how-it-works-item
+    width: 31.877213695395514%
+    max-width: 270px
+    padding: 115px 0 0 0
+    position: relative
+    &:before
+      content: ''
+      display: block
+      width: 100px
+      height: 100px
+      border-radius: 50px
+      background: $color-white-4
+      position: absolute
+      left: 50%
+      top: 0
+      transform: translate3d(-50%,0,0)
+    &:after
+      content: ''
+      position: absolute
+      left: 50%
+      top: 0
+      transform: translate3d(-50%,0,0)
+    &--payment
+      &:after
+        @extend .icon-hand-and-money
+        top: 25px
+    &--group
+      &:after
+        @extend .icon-speaker
+        top: 25px
+    &--add-money
+      &:after
+        @extend .icon-message-alert
+        top: 28px
+  &__how-it-works-text
+    font: 400 14px/1.571 $font-default
+    color: $color-black
+    text-align: center
+    .pay-for-classes__how-it-works-item &:after
+      content: ''
+      @extend .icon-arrow-blue-big-right-2
+      position: absolute
+      right: 0
+      top: 39px
+      transform: translate3d(26px,0,0)
+    .pay-for-classes__how-it-works-item:last-child &:after
+      display: none
+  &__how-it-works-text-bold
+    font-weight: bold

@@ -1,0 +1,36 @@
+.modal-receive-consultation.modal-receive-consultation--active
+  .modal-receive-consultation__container
+    .modal-receive-consultation__close
+    .modal-receive-consultation__title
+      | Заполните форму&nbsp;
+      br
+      | и&nbsp;получите бесплатную&nbsp;
+      br
+      | консультацию
+    .modal-receive-consultation__descr
+      | Мы&nbsp;свяжемся с&nbsp;вами, ответим на&nbsp;вопросы,&nbsp;
+      br
+      | и&nbsp;поможем подобрать расписание&nbsp;
+      br
+      | и&nbsp;подходящий вариант обучения
+    form.modal-receive-consultation__form
+      .modal-receive-consultation__form-row
+        input.modal-receive-consultation__input-text(type="text" value="" placeholder="Ваше имя")
+      .modal-receive-consultation__form-row.modal-receive-consultation__form-row--2-col
+        input.modal-receive-consultation__input-text.modal-receive-consultation__input-text--phone(type="text" value="" placeholder="+7 (___)___-__-__")
+        .modal-receive-consultation__select-wrapper
+          select.modal-receive-consultation__select
+            option.modal-receive-consultation__select-option(disabled selected value) Класс
+            option.modal-receive-consultation__select-option(value="1") 1
+            option.modal-receive-consultation__select-option(value="2") 2
+            option.modal-receive-consultation__select-option(value="3") 3
+            option.modal-receive-consultation__select-option(value="4") 4
+            option.modal-receive-consultation__select-option(value="5") 5
+            option.modal-receive-consultation__select-option(value="6") 6
+      .modal-receive-consultation__form-row
+        button.modal-receive-consultation__btn(type="submit") Оставить заявку
+      .modal-receive-consultation__form-row
+        .modal-receive-consultation__text
+          | Нажимая на&nbsp;кнопку, я&nbsp;принимаю&nbsp;
+          a.modal-receive-consultation__text-link(href="#") условия соглашения
+  .modal-receive-consultation__overlay

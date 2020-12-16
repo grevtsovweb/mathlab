@@ -1,0 +1,52 @@
+.price-block
+    padding-top: 60px
+    padding-bottom: 60px
+
+    +md-block()
+        padding-top: 40px
+        padding-bottom: 40px
+
+    +sm-block()
+        padding-top: 30px
+        padding-bottom: 30px
+
+    &__container
+        +wrapper()
+
+    &__row
+        +row-flex()
+
+    &__col
+        +col()
+        +size(4)
+
+        +size-sm(12)
+
+        +sm-block()
+            margin-bottom: 20px
+
+    &__title
+        margin-bottom: 90px
+
+        +md-block()
+            margin-bottom: 60px
+
+        +sm-block()
+            margin-bottom: 25px
+
+    &__description
+        font-family: $font-default
+        font-style: normal
+        font-weight: normal
+        font-size: 20px
+        line-height: 20px
+        text-align: center
+        margin-top: 50px
+        color: $color-second-text
+
+        +md-block()
+            font-size: 14px
+            margin-top: 25px
+
+        +sm-block()
+            margin-top: 15px
