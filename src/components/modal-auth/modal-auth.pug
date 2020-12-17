@@ -1,24 +1,26 @@
 .modal-auth-reg.modal-auth-reg-js
-  .modal-auth-reg__container
-    .modal-auth-reg__close
-      button.modal-auth-reg__close-button.modal-auth-reg-close-js
-        include ../../assets/img/commons/close.svg
-    .modal-auth-reg__content
-      .modal-auth-reg__content-item.modal-auth-reg__content-item--active(data-content="0")
-        .modal-auth-reg__title Запись на занятия
-        form.modal-auth-reg__form
-          .modal-auth-reg__form-row
-            input.modal-auth-reg__input-text.modal-auth-reg__input-text--lg.modal-auth-reg__input-text--phone(type="number" value="" placeholder="Телефон")
-          .modal-auth-reg__form-row
-            input.modal-auth-reg__input-text.modal-auth-reg__input-text--lg(type="email" value="" placeholder="Почта")
-          .modal-auth-reg__form-row
-            input.modal-auth-reg__input-text.modal-auth-reg__input-text--lg(type="text" value="" placeholder="Имя ученика")
-          .modal-auth-reg__form-row
-            input.modal-auth-reg__input-text.modal-auth-reg__input-text--lg(type="number" value="" placeholder="Класс")
-          .modal-auth-reg__form-row.modal-auth-reg__button
-            button.modal-auth-reg__btn(type="submit") Оставить заявку
-          .modal-auth-reg__form-row
-            .modal-auth-reg__text
-              | Нажимая на&nbsp;кнопку, я&nbsp;принимаю&nbsp;
-              a.modal-auth-reg__text-link(href="#") условия соглашения
+  .modal-auth-reg__container-outside
+    .modal-auth-reg__container
+      button.modal-auth-reg__header-button(disabled) Онлайн занятия
+      .modal-auth-reg__close
+        button.modal-auth-reg__close-button.modal-auth-reg-close-js
+          include ../../assets/img/commons/close.svg
+      .modal-auth-reg__content
+        .modal-auth-reg__content-item.modal-auth-reg__content-item--active(data-content="0")
+          .modal-auth-reg__title Запись на занятия
+          form.modal-auth-reg__form
+            .modal-auth-reg__form-row
+              input.modal-auth-reg__input-text.modal-auth-reg__input-text--phone(type="number" value="" placeholder="Телефон")
+            .modal-auth-reg__form-row
+              input.modal-auth-reg__input-text(type="email" value="" placeholder="Почта")
+            .modal-auth-reg__form-row.modal-auth-reg__form-row--2-col
+              input.modal-auth-reg__input-text(type="text" value="" placeholder="Имя ученика")
+              .modal-auth-reg__class-wrapper
+                input.modal-auth-reg__input-text(type="number" value="" placeholder="Класс")
+            .modal-auth-reg__form-row.modal-auth-reg__button
+              button.modal-auth-reg__btn(type="submit") Оставить заявку
+            .modal-auth-reg__form-row
+              .modal-auth-reg__text
+                | Нажимая на&nbsp;кнопку, я&nbsp;принимаю&nbsp;
+                a.modal-auth-reg__text-link(href="#") условия соглашения
   .modal-auth-reg__overlay

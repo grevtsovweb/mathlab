@@ -12,7 +12,6 @@
     <div class="modal-auth-reg modal-auth-reg-js">
       <div class="modal-auth-reg__container-outside">
         <div class="modal-auth-reg__container">
-          <button class="modal-auth-reg__header-button" disabled>Онлайн занятия</button>
           <div class="modal-auth-reg__close">
             <button class="modal-auth-reg__close-button modal-auth-reg-close-js"><svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2676 0.818078L1.31809 15.7676C0.955273 16.1304 0.97769 16.7411 1.36824 17.1317C1.75877 17.5222 2.36949 17.5446 2.7323 17.1818L17.6818 2.23229C18.0447 1.8694 18.0222 1.25875 17.6317 0.868212C17.2412 0.477698 16.6305 0.45519 16.2676 0.818078Z" fill="#1F2D48"/>
@@ -21,9 +20,13 @@
 
             </button>
           </div>
+          <div class="modal-auth-reg__nav">
+            <button class="modal-auth-reg__nav-item modal-auth-reg__nav-item--active">Индивидуальные</button>
+            <button class="modal-auth-reg__nav-item">В группе</button>
+          </div>
           <div class="modal-auth-reg__content">
-            <div class="modal-auth-reg__content-item modal-auth-reg__content-item--active" data-content="0">
-              <div class="modal-auth-reg__title">Запись на занятия</div>
+            <div class="modal-auth-reg__content-item modal-auth-reg__content-item--active">
+              <div class="modal-auth-reg__title">Запись на индивидуальные занятия</div>
               <form class="modal-auth-reg__form">
                 <div class="modal-auth-reg__form-row">
                   <input class="modal-auth-reg__input-text modal-auth-reg__input-text--phone" type="number" value="" placeholder="Телефон">
@@ -42,6 +45,29 @@
                 </div>
                 <div class="modal-auth-reg__form-row">
                   <div class="modal-auth-reg__text">Нажимая на&nbsp;кнопку, я&nbsp;принимаю&nbsp;<a class="modal-auth-reg__text-link" href="#">условия соглашения</a></div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-auth-reg__content-item">
+              <div class="modal-auth-reg__title">Запись на занятия в группе</div>
+              <form class="modal-auth-reg__form">
+                <div class="modal-auth-reg__form-row">
+                  <input class="modal-auth-reg__input-text modal-auth-reg__input-text--phone" type="number" value="" placeholder="Телефон">
+                </div>
+                <div class="modal-auth-reg__form-row">
+                  <input class="modal-auth-reg__input-text" type="email" value="" placeholder="Почта">
+                </div>
+                <div class="modal-auth-reg__form-row modal-auth-reg__form-row--2-col">
+                  <input class="modal-auth-reg__input-text" type="text" value="" placeholder="Имя ученика">
+                  <div class="modal-auth-reg__class-wrapper">
+                    <input class="modal-auth-reg__input-text" type="number" value="" placeholder="Класс">
+                  </div>
+                </div>
+                <div class="modal-auth-reg__form-row modal-auth-reg__button">
+                  <button class="modal-auth-reg__btn" type="submit">Оставить заявку</button>
+                </div>
+                <div class="modal-auth-reg__form-row">
+                  <div class="modal-auth-reg__text">Нажимая на&nbsp;кнопку, я&nbsp;принимаю&nbsp;<a class="modal-auth-reg__text-link" href="#">условия соглашения </a></div>
                 </div>
               </form>
             </div>

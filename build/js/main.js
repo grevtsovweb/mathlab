@@ -43,6 +43,29 @@ document.addEventListener('DOMContentLoaded', function(){
         buttonsOpenAuth[i].addEventListener('click', openModal)
     }
 
+
+    let modalTabHendlers = document.querySelectorAll('.modal-auth-reg__nav-item');
+    let modalTabItems = document.querySelectorAll('.modal-auth-reg__content-item');
+    
+  
+    let addClickListener = function(button, tabItem){
+        button.addEventListener('click', function(){
+            for(let i = 0; i < modalTabHendlers.length; i++){
+                modalTabHendlers[i].classList.remove('modal-auth-reg__nav-item--active');
+                modalTabItems[i].classList.remove('modal-auth-reg__content-item--active');
+            }
+
+            button.classList.add('modal-auth-reg__nav-item--active');
+            tabItem.classList.add('modal-auth-reg__content-item--active');
+        })
+    }
+
+    for(let i = 0; i < modalTabHendlers.length; i++){
+        addClickListener(modalTabHendlers[i], modalTabItems[i]);
+    }
+
+
+
     // Модальное окно записи на мобильных после исчезновения импута
     if(window.innerWidth < 761){
         for(let i = 0; i < buttonsMobileOpenAuth.length; i++){
